@@ -106,19 +106,19 @@ img { max-width: 100%; }
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 48px;
+  width: 64px;
   pointer-events: none;
   z-index: 2;
   transition: opacity 0.2s;
 }
 .tab-nav-wrap::before {
   left: 0;
-  background: linear-gradient(to right, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 60%, rgba(255,255,255,0) 100%);
   opacity: 0;
 }
 .tab-nav-wrap::after {
   right: 0;
-  background: linear-gradient(to left, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6) 60%, rgba(255,255,255,0) 100%);
   opacity: 1;
 }
 .tab-nav-wrap.can-scroll-left::before  { opacity: 1; }
@@ -132,14 +132,16 @@ img { max-width: 100%; }
   transform: translateY(-50%);
   z-index: 3;
   pointer-events: none;
-  font-size: 0.7rem;
-  color: var(--warm);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--violet);
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0.25s;
   line-height: 1;
+  text-shadow: 0 0 6px rgba(255,255,255,0.9);
 }
-.tab-scroll-arrow.arrow-left  { left: 4px; }
-.tab-scroll-arrow.arrow-right { right: 4px; }
+.tab-scroll-arrow.arrow-left  { left: 6px; }
+.tab-scroll-arrow.arrow-right { right: 6px; }
 .tab-nav-wrap.can-scroll-left  .arrow-left  { opacity: 1; }
 .tab-nav-wrap.can-scroll-right .arrow-right { opacity: 1; }
 
@@ -803,37 +805,6 @@ img { max-width: 100%; }
   white-space: nowrap;
 }
 
-/* ─── HEADER CLOCKS ─── */
-.header-clocks {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-top: 0.6rem;
-}
-.clock-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.1rem;
-}
-.clock-label {
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
-}
-.clock-time {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 400;
-  color: rgba(255,255,255,0.88);
-  letter-spacing: 0.03em;
-  line-height: 1;
-}
-.clock-divider {
-  font-size: 1rem;
-  color: rgba(255,255,255,0.25);
-  margin-top: 0.75rem;
-}
+/* ─── HEADER CLOCKS — inline with version tag ─── */
+.clock-sep  { color: rgba(255,255,255,0.35); margin: 0 0.3em; }
+.clock-city { color: rgba(255,255,255,0.45); }

@@ -16,17 +16,12 @@
     <p class="header-eyebrow">Bali · May 31 – June 5, 2026</p>
     <h1 class="header-title">Robin's <em>60th</em></h1>
     <p class="header-sub">Singapore · Buahan, a Banyan Tree Escape · Bali</p>
-    <span class="version-tag" id="versionTag">Loading...</span>
-    <div class="header-clocks">
-      <div class="clock-item">
-        <span class="clock-label">Omaha</span>
-        <span class="clock-time" id="clockOmaha">--:-- --</span>
-      </div>
-      <div class="clock-divider">·</div>
-      <div class="clock-item">
-        <span class="clock-label">Bali</span>
-        <span class="clock-time" id="clockBali">--:-- --</span>
-      </div>
+    <div class="version-tag" id="versionBlock">
+      <span id="versionTag">Loading...</span>
+      <span class="clock-sep">·</span>
+      <span id="clockOmaha">--:--</span> <span class="clock-city">Omaha</span>
+      <span class="clock-sep">·</span>
+      <span id="clockBali">--:--</span> <span class="clock-city">Bali</span>
     </div>
   </div>
 </header>
@@ -80,7 +75,7 @@
     <div class="day-body">
       <div class="sched-block"><div class="sched-time">~2:00 pm</div><div class="sched-content"><div class="sched-label">Arrive Buahan — check in, settle in, explore</div><div class="sched-note">Two-hour drive from DPS. Karen, Taylor, and Dusty have been on property since May 29. Full group together for the first time.</div><div class="sched-who">All guests</div><span class="pill pill-logistics">Logistics</span></div></div>
       <div class="free-block">◇ Afternoon — Free time · Pool · Unpack · Rest · Explore</div>
-      <div class="sched-block"><div class="sched-time">5:00 pm</div><div class="sched-content"><div class="sched-label">Canang Sari offering workshop</div><div class="sched-note">A local Balinese priest leads the group in making traditional flower offerings — small palm-leaf baskets filled with flowers, incense, and symbolic items offered in gratitude. Afterward, the group walks to Buahan's on-property mini temple to place the offerings. Confirm attire with Dian — sarongs may be provided.</div><div class="sched-who">All guests</div><span class="pill pill-anchor">Anchor Moment</span></div></div>
+      <div class="sched-block"><div class="sched-time">5:00 pm</div><div class="sched-content"><div class="sched-label">Canang Sari Offering Workshop</div><div class="sched-note">A local Balinese priest leads the group in making traditional flower offerings — small palm-leaf baskets filled with flowers, incense, and symbolic items offered in gratitude. Afterward, the group walks to Buahan's on-property mini temple to place the offerings. Confirm attire with Dian — sarongs may be provided.</div><div class="sched-who">All guests</div><span class="pill pill-anchor">Anchor Moment</span></div></div>
       <div class="sched-block"><div class="sched-time">~6:30 pm</div><div class="sched-content"><div class="sched-label">Moon Yoga at the Pavilion</div><div class="sched-note">As the full moon rises over the jungle. Cost TBD from Dian.</div><span class="pill pill-optional">Optional</span></div></div>
       <div class="sched-block"><div class="sched-time">7:30 pm</div><div class="sched-content"><div class="sched-label">Cocktails at The Botanist Bar</div><div class="sched-note">The group's first real gathering. Informal, easy — everyone getting settled.</div></div></div>
       <div class="sched-block"><div class="sched-time">8:00 pm</div><div class="sched-content"><div class="sched-label">Dinner at Open Kitchen</div><div class="sched-note">Casual and communal. First night in Bali.</div></div></div>
@@ -140,7 +135,7 @@
       <div class="travel-block">→ ~1 hour drive to Mount Batur trailhead</div>
       <div class="sched-block"><div class="sched-time">3:00 am</div><div class="sched-content"><div class="sched-label">Hike begins — Mount Batur (1,717m)</div><div class="sched-note">Pre-dawn climb through ancient tropical forest with a local guide. Timing confirmed by Dian.</div></div></div>
       <div class="sched-block"><div class="sched-time">~5:00 am</div><div class="sched-content"><div class="sched-label">Summit — sunrise and volcanic steam breakfast</div><div class="sched-note">Eggs cooked on volcanic steam at the summit. Panoramic views across eastern Bali. Worth every step.</div></div></div>
-      <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Begin descent</div></div></div>
+      <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Begin Descent</div></div></div>
       <div class="sched-block"><div class="sched-time">~8:30 am</div><div class="sched-content"><div class="sched-label">Optional — Hot springs and caldera-view lunch</div><div class="sched-note">After the hike, we can add Toya Devasya hot springs on Lake Batur and a caldera-view lunch at Penelokan rim. The group decides after the hike.</div><span class="pill pill-optional">Optional</span></div></div>
       <div class="travel-block">→ ~1–1.5 hour drive back to Buahan</div>
       <div class="sched-block"><div class="sched-time">Morning to early afternoon</div><div class="sched-content"><div class="sched-label">Return to Buahan — timing TBD</div><div class="sched-note">What we do after the hike is TBD. We may return directly or stop along the way.</div><span class="pill pill-tbd">TBD</span></div></div>
@@ -163,12 +158,12 @@
     <div class="day-body">
       <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Breakfast at Open Kitchen</div></div></div>
       <div class="sched-block"><div class="sched-time">8:00 am</div><div class="sched-content"><div class="sched-label">Surya Hatta Yoga</div><div class="sched-note">Optional — included in stay.</div><span class="pill pill-optional">Optional</span></div></div>
-      <div class="sched-block"><div class="sched-time">9 or 10 am</div><div class="sched-content"><div class="sched-label">Village school visit — SDN 2 Buahan</div><div class="sched-note">Five minutes from the resort. Elementary school visit aligned with Karen's Alpaca mission. Buahan's sustainability team accompanies. Bring storybooks and teaching supplies. ~45 minutes. Timing and gifts TBD with Dian and Karen.</div><div class="sched-who">All guests</div><span class="pill pill-giveback">Give Back</span></div></div>
+      <div class="sched-block"><div class="sched-time">9 or 10 am</div><div class="sched-content"><div class="sched-label">Village School Visit — SDN 2 Buahan</div><div class="sched-note">Five minutes from the resort. Elementary school visit aligned with Karen's Alpaca mission. Buahan's sustainability team accompanies. Bring storybooks and teaching supplies. ~45 minutes. Timing and gifts TBD with Dian and Karen.</div><div class="sched-who">All guests</div><span class="pill pill-giveback">Give Back</span></div></div>
       <div class="free-block">◇ Late morning — Free time · Pool · Lunch at leisure</div>
       <div class="sched-block"><div class="sched-time">2:00 pm</div><div class="sched-content"><div class="sched-label">Soul Freedom Journey — Tjampuhan Waterfall</div><div class="sched-note">Guided by a Buahan Discovery Host and Balinese priest. Traditional attire, trek through the sacred valley, Melukat purification ritual at the confluence of sacred rivers. One of the most meaningful experiences of the trip.</div><div class="sched-who">All guests</div><span class="pill pill-anchor">Anchor Moment</span></div></div>
       <div class="travel-block">→ ~30 min drive to Ubud · Dian arranging transport</div>
       <div class="sched-block"><div class="sched-time">Evening</div><div class="sched-content"><div class="sched-label">Farewell dinner in Ubud — Tangelo Bali (recommended)</div><div class="sched-note">Dinner for all 9. Open-air, global-Balinese fusion. On Mondays, the Spirit of Sebatu Balinese dance takes place during dinner. Confirm booking.</div><div class="sched-who">All guests</div><a class="sched-link" href="https://www.instagram.com/tangelobali/" target="_blank">@tangelobali</a></div></div>
-      <div class="sched-block"><div class="sched-time">After dinner</div><div class="sched-content"><div class="sched-label">Farewell drinks · Group splits</div><div class="sched-note">Karen, Taylor, Dusty, John, and Allison transfer directly from Ubud to DPS. Aaron, Robin, Andy, and Julie return to Buahan via Grab.</div><span class="pill pill-logistics">Logistics</span></div></div>
+      <div class="sched-block"><div class="sched-time">After dinner</div><div class="sched-content"><div class="sched-label">Farewell Drinks · Group Splits</div><div class="sched-note">Karen, Taylor, Dusty, John, and Allison transfer directly from Ubud to DPS. Aaron, Robin, Andy, and Julie return to Buahan via Grab.</div><span class="pill pill-logistics">Logistics</span></div></div>
       <div class="sched-block"><div class="sched-time">~10:00 pm</div><div class="sched-content"><div class="sched-label">Karen, Taylor, Dusty, Allison & John depart for DPS</div><div class="sched-note">Flight 1:00am June 5. A beautiful send-off from Ubud.</div><div class="sched-who">Karen · Taylor · Dusty · Allison · John</div><span class="pill pill-logistics">Logistics</span></div></div>
     </div>
   </div>
@@ -188,7 +183,7 @@
       <div class="free-block">◇ Morning — Final swim · Pack · Soak it all in</div>
       <div class="sched-block"><div class="sched-time">12:00 pm</div><div class="sched-content"><div class="sched-label">Check out from Buahan</div><div class="sched-who">Robin · Aaron · Andy · Julie</div><span class="pill pill-logistics">Logistics</span></div></div>
       <div class="travel-block">→ ~2-hour drive to DPS-area hotel</div>
-      <div class="sched-block"><div class="sched-time">Evening</div><div class="sched-content"><div class="sched-label">DPS-area hotel — TBD</div><div class="sched-note">A hotel near DPS may not be needed — Robin, Aaron, and Andy may also depart DPS at ~1:00am June 6 on the same flight as Julie. Dian is sourcing hotel options in case we need them.</div><div class="sched-who">Robin · Aaron · Andy · Julie</div></div></div>
+      <div class="sched-block"><div class="sched-time">Evening</div><div class="sched-content"><div class="sched-label">DPS-area hotel — TBD</div><div class="sched-note">We may or may not need a hotel this night. Julie departs DPS at ~1:00am June 6, and Robin, Aaron, and Andy may also fly out at the same time — to Raja Ampat (TBD). Dian is sourcing options in case we need them.</div><div class="sched-who">Robin · Aaron · Andy · Julie</div></div></div>
       <div class="sched-block"><div class="sched-time">~11:30 pm</div><div class="sched-content"><div class="sched-label">Julie departs for DPS</div><div class="sched-note">Flight 1:00am June 6. Aaron and Robin accompany, then return to hotel.</div><div class="sched-who">Julie · Robin · Aaron</div><span class="pill pill-logistics">Logistics</span></div></div>
     </div>
   </div>
@@ -253,7 +248,7 @@
     <div class="info-rows">
       <div class="info-row"><div class="info-label">All resort drives</div><div class="info-detail">The resort drives the group to all dinners and events. Returns from Ubud venues via Grab.</div></div>
       <div class="info-row"><div class="info-label">June 4 farewell</div><div class="info-detail">Dian is arranging transport to Ubud on June 4. We can ask about a direct transfer from Ubud to the airport for the 5 departing guests.</div></div>
-      <div class="info-row"><div class="info-label">June 5 hotel</div><div class="info-detail">Must have reliable late-night airport transfer — Julie departs 1:00am June 6. Dian is sourcing recommendations.</div></div>
+      <div class="info-row"><div class="info-label">June 5 hotel</div><div class="info-detail">TBD — Julie departs DPS at ~1:00am June 6. Robin, Aaron, and Andy may also fly out that night (to Raja Ampat, TBD). A hotel may not be needed. Dian is sourcing options in case.</div></div>
     </div>
   </div>
 </section>

@@ -57,16 +57,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ── LIVE CLOCKS ───────────────────────────────────────
   function updateClocks() {
-    const now = new Date();
-    const omahaOpts = { timeZone: 'America/Chicago', hour: 'numeric', minute: '2-digit', hour12: true };
-    const baliOpts  = { timeZone: 'Asia/Makassar',   hour: 'numeric', minute: '2-digit', hour12: true };
-    const omaha = document.getElementById('clockOmaha');
-    const bali  = document.getElementById('clockBali');
-    if (omaha) omaha.textContent = now.toLocaleTimeString('en-US', omahaOpts);
-    if (bali)  bali.textContent  = now.toLocaleTimeString('en-US', baliOpts);
+    try {
+      const now = new Date();
+      const fmt = { hour: 'numeric', minute: '2-digit', hour12: true };
+      const omahaStr = now.toLocaleTimeString('en-US', Object.assign({}, fmt, { timeZone: 'America/Chicago' }));
+      const baliStr  = now.toLocaleTimeString('en-US', Object.assign({}, fmt, { timeZone: 'Asia/Makassar' }));
+      const omaha = document.getElementById('clockOmaha');
+      const bali  = document.getElementById('clockBali');
+      if (omaha) omaha.textContent = omahaStr;
+      if (bali)  bali.textContent  = baliStr;
+    } catch(e) {}
   }
   updateClocks();
-  setInterval(updateClocks, 1000); // Update every second
+  setInterval(updateClocks, 30000);
 
   // ── TAB NAVIGATION ────────────────────────────────────
   const tabBtns = document.querySelectorAll('.tab-btn');
@@ -101,8 +104,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!navInner || !navWrap) return;
     const sl = navInner.scrollLeft;
     const maxScroll = navInner.scrollWidth - navInner.clientWidth;
-    navWrap.classList.toggle('can-scroll-left',  sl > 4);
-    navWrap.classList.toggle('can-scroll-right', sl < maxScroll - 4);
+    navWrap.classList.toggle('can-scroll-left',  sl > 8);
+    navWrap.classList.toggle('can-scroll-right', sl < maxScroll - 8);
   }
 
   if (navInner) {
