@@ -36,26 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
       .catch(() => {}); // Silently fail — static estimates remain
   })();
 
-  // ── TIMESTAMP ─────────────────────────────────────────
-  function setTimestamp() {
-    try {
-      const now = new Date();
-      const opts = {
-        timeZone: 'America/Chicago',
-        month: 'long', day: 'numeric', year: 'numeric',
-        hour: 'numeric', minute: '2-digit', hour12: true
-      };
-      const formatted = now.toLocaleString('en-US', opts) + ' CT';
-      const tag = document.getElementById('versionTag');
-      const footer = document.getElementById('footerVersion');
-      if (tag) tag.textContent = 'Last updated: ' + formatted;
-      if (footer) footer.textContent = "Robin's 60th · Bali 2026 · Last updated: " + formatted;
-    } catch (e) {
-      const tag = document.getElementById('versionTag');
-      if (tag) tag.textContent = 'May 2026';
-    }
-  }
-  setTimestamp();
+  // ── TIMESTAMP — static, set at build time ────────────
+  const LAST_UPDATED = 'May 17, 2026 at 3:25 PM CT';
+  const tag = document.getElementById('versionTag');
+  const footer = document.getElementById('footerVersion');
+  if (tag) tag.textContent = 'Last updated: ' + LAST_UPDATED;
+  if (footer) footer.textContent = "Robin's 60th · Bali 2026 · Last updated: " + LAST_UPDATED;
 
   // ── LIVE CLOCKS ───────────────────────────────────────
   function updateClocks() {
