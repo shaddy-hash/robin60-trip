@@ -25,27 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
           hikeCell.textContent = '~$' + Math.round(3700000 * usdPerIdr) + ' / $' + Math.round(2700000 * usdPerIdr);
         }
 
-        // Recalculate wine USD cells
-        // data-idr is the display value e.g. "15,250" meaning 15,250,000 IDR
-        // So strip commas, parse as integer, multiply by 1000, then convert
-        document.querySelectorAll('.wine-usd[data-idr]').forEach(cell => {
-          const raw = cell.dataset.idr;
-          // Glass/bottle split e.g. "350/glass · 1,450/btl"
-          if (raw.includes('/glass')) {
-            const parts = raw.split('·');
-            const glNum  = parseInt(parts[0].replace(/[^0-9]/g, '')) * 1000;
-            const btlNum = parseInt(parts[1].replace(/[^0-9]/g, '')) * 1000;
-            if (glNum && btlNum) {
-              cell.textContent = '$' + Math.round(glNum * usdPerIdr) + '/gl · $' + Math.round(btlNum * usdPerIdr) + '/btl';
-            }
-          } else {
-            // Standard value e.g. "15,250"
-            const num = parseInt(raw.replace(/,/g, '')) * 1000;
-            if (num > 0) {
-              cell.textContent = '~$' + Math.round(num * usdPerIdr);
-            }
-          }
-        });
+        // Wine USD values are static in HTML — no JS recalculation needed
       })
       .catch(() => {}); // Silently fail — static estimates remain
   })();
