@@ -214,7 +214,7 @@ img { max-width: 100%; }
   text-transform: uppercase;
 }
 .pill-anchor   { background: #E8E1F7; color: var(--violet); }
-.pill-giveback { background: #F5E9D9; color: var(--gold); }
+.pill-local-connect { background: #F5E9D9; color: var(--gold); }
 .pill-optional { background: #EDEBE8; color: var(--warm); }
 .pill-free     { background: #DFF0ED; color: var(--teal); }
 .pill-logistics{ background: #E0E5E9; color: var(--slate); }
