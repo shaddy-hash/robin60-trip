@@ -609,13 +609,14 @@ img { max-width: 100%; }
 .tg-coral  { border-color: var(--coral); }
 .tg-teal   { border-color: var(--teal); }
 .tg-label {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--warm);
+  color: var(--ink);
   margin-bottom: 0.25rem;
 }
+.tg-label strong { color: var(--ink); font-size: 0.9rem; text-transform: none; letter-spacing: 0; }
 .tg-members {
   font-size: 0.9rem;
   font-weight: 600;
@@ -725,4 +726,22 @@ img { max-width: 100%; }
 @media (max-width: 600px) {
   .wc-stats { flex-wrap: wrap; gap: 1rem; }
   .transport-groups { gap: 0.5rem; }
+}
+
+/* ─── DRESS CODE CALLOUT ─── */
+.dress-code {
+  margin: 0.4rem 0 0.35rem;
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(135deg, #F5EFE6 0%, #EDE8F5 100%);
+  border-left: 3px solid var(--violet);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.82rem;
+  color: var(--ink);
+  line-height: 1.55;
+  font-style: italic;
+}
+.dress-code strong {
+  font-style: normal;
+  color: var(--violet);
+  font-weight: 700;
 }
