@@ -12,24 +12,26 @@ document.addEventListener('DOMContentLoaded', function () {
         // Update note
         const note = document.getElementById('usd-rate-note');
         if (note) note.textContent = 'Live rate: ~' + idrPerUsd.toLocaleString() + ' IDR per $1 USD';
-        // Recalculate each USD cell
-        document.querySelectorAll('.usd-col').forEach(cell => {
-          const row = cell.closest('tr');
-          if (!row) return;
-          const idrCell = row.querySelector('td:nth-child(2)');
-          if (!idrCell) return;
-          const idrText = idrCell.textContent;
-          // Extract all numeric values
-          const nums = idrText.match(/[\d,]+/g);
-          if (!nums) return;
-          const vals = nums.map(n => parseInt(n.replace(/,/g, ''))).filter(n => n > 1000);
-          if (!vals.length) return;
-          const usdVals = vals.map(v => Math.round(v * usdPerIdr));
-          const unique = [...new Set(usdVals)];
-          cell.textContent = unique.length === 1
-            ? '~$' + unique[0]
-            : '~$' + Math.min(...unique) + '–$' + Math.max(...unique);
+        // Recalculate each USD cell using data-idr attribute
+        document.querySelectorAll('.usd-col[data-idr]').forEach(cell => {
+          const idrVal = parseInt(cell.dataset.idr);
+          if (!idrVal) return;
+          const usd = Math.round(idrVal * usdPerIdr);
+          // For hike, show both couple/single
+          if (cell.textContent.includes('/')) {
+            const idr2 = Math.round(idrVal * 0.73); // approx single rate
+            cell.textContent = '~$' + usd + ' / $' + Math.round(2700000 * usdPerIdr);
+          } else {
+            cell.textContent = '~$' + usd;
+          }
         });
+        // Special case: hike has two rates
+        const hikeCell = document.querySelector('.usd-col[data-idr="3700000"]');
+        if (hikeCell) {
+          const couple = Math.round(3700000 * usdPerIdr);
+          const single = Math.round(2700000 * usdPerIdr);
+          hikeCell.textContent = '~$' + couple + ' / $' + single;
+        }
       })
       .catch(() => {}); // Silently fail — static estimates remain
   })();

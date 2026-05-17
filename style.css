@@ -805,6 +805,51 @@ img { max-width: 100%; }
   white-space: nowrap;
 }
 
-/* ─── HEADER CLOCKS — inline with version tag ─── */
-.clock-sep  { color: rgba(255,255,255,0.35); margin: 0 0.3em; }
-.clock-city { color: rgba(255,255,255,0.45); }
+/* ─── HEADER CLOCKS ─── */
+.header-clocks {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+  flex-wrap: wrap;
+}
+.clock-current-label {
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.38);
+}
+.clock-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.28rem;
+}
+.clock-label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+.clock-time {
+  font-family: var(--font-display);
+  font-size: 1.0rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.82);
+  letter-spacing: 0.02em;
+}
+.clock-divider {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.2);
+}
+
+/* ─── PRICING TABLE COLUMN WIDTHS ─── */
+#tab-pricing .data-table { table-layout: fixed; }
+#tab-pricing .data-table th:nth-child(1) { width: 22%; }
+#tab-pricing .data-table th:nth-child(2) { width: 20%; }
+#tab-pricing .data-table th:nth-child(3) { width: 9%;  }
+#tab-pricing .data-table th:nth-child(4) { width: 20%; }
+#tab-pricing .data-table th:nth-child(5) { width: 29%; }

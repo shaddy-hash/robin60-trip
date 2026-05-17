@@ -1,732 +1,738 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Robin's 60th · Bali 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+ <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title>Robin's 60th · Bali 2026</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="header-inner">
-    <p class="header-eyebrow">Bali · May 31 – June 5, 2026</p>
-    <h1 class="header-title">Robin's <em>60th</em></h1>
-    <p class="header-sub">Singapore · Buahan, a Banyan Tree Escape · Bali</p>
-    <div class="version-tag" id="versionBlock">
-      <span id="versionTag">Loading...</span>
-      <span class="clock-sep">·</span>
-      <span id="clockOmaha">--:--</span> <span class="clock-city">Omaha</span>
-      <span class="clock-sep">·</span>
-      <span id="clockBali">--:--</span> <span class="clock-city">Bali</span>
-    </div>
+ <div class="header-inner">
+  <p class="header-eyebrow">Bali · May 31 – June 5, 2026</p>
+  <h1 class="header-title">Robin's <em>60th</em></h1>
+  <p class="header-sub">Singapore · Buahan, a Banyan Tree Escape · Bali</p>
+  <div class="header-clocks">
+   <span class="clock-current-label">Current Time:</span>
+   <div class="clock-item">
+    <span class="clock-label">Omaha</span>
+    <span class="clock-time" id="clockOmaha">--:-- --</span>
+   </div>
+   <div class="clock-divider">·</div>
+   <div class="clock-item">
+    <span class="clock-label">Bali</span>
+    <span class="clock-time" id="clockBali">--:-- --</span>
+   </div>
   </div>
+  <span class="version-tag" id="versionTag">Loading…</span>
+ </div>
 </header>
 
 <nav class="tab-nav" id="tabNav">
-  <div class="tab-nav-wrap" id="tabNavWrap">
-    <span class="tab-scroll-arrow arrow-left" aria-hidden="true">‹</span>
-    <span class="tab-scroll-arrow arrow-right" aria-hidden="true">›</span>
-    <div class="tab-nav-inner" id="tabNavInner">
-    <button class="tab-btn active" data-tab="schedule">The Schedule</button>
-    <button class="tab-btn" data-tab="arrivals">Arrivals & Departures</button>
-    <button class="tab-btn" data-tab="activities">Resort Standard Activities</button>
-    <button class="tab-btn" data-tab="area">Area Guide</button>
-    <button class="tab-btn" data-tab="wine">Wine List</button>
-    <button class="tab-btn" data-tab="pricing">Pricing</button>
-    <button class="tab-btn" data-tab="decisions">Guest Decisions</button>
-    <button class="tab-btn" data-tab="beforeyougo">Before You Go</button>
-    <button class="tab-btn" data-tab="culture">Culture & Language</button>
-    <button class="tab-btn" data-tab="weather">Weather</button>
-    <button class="tab-btn" data-tab="links">Links, Contact & Other</button>
-    </div>
+ <div class="tab-nav-wrap" id="tabNavWrap">
+  <span class="tab-scroll-arrow arrow-left" aria-hidden="true">‹</span>
+  <span class="tab-scroll-arrow arrow-right" aria-hidden="true">›</span>
+  <div class="tab-nav-inner" id="tabNavInner">
+  <button class="tab-btn active" data-tab="schedule">The Schedule</button>
+  <button class="tab-btn" data-tab="arrivals">Arrivals & Departures</button>
+  <button class="tab-btn" data-tab="activities">Resort Standard Activities</button>
+  <button class="tab-btn" data-tab="area">Area Guide</button>
+  <button class="tab-btn" data-tab="wine">Wine List</button>
+  <button class="tab-btn" data-tab="pricing">Pricing</button>
+  <button class="tab-btn" data-tab="decisions">Guest Decisions</button>
+  <button class="tab-btn" data-tab="beforeyougo">Before You Go</button>
+  <button class="tab-btn" data-tab="culture">Culture & Language</button>
+  <button class="tab-btn" data-tab="weather">Weather</button>
+  <button class="tab-btn" data-tab="links">Links, Contact & Other</button>
   </div>
+ </div>
 </nav>
 
 <main class="main-content">
 
 <!-- ═══ SCHEDULE ═══ -->
 <section class="tab-panel active" id="tab-schedule">
-  <div class="section-intro">
-    <h2 class="section-title">The Schedule</h2>
-    <p class="section-desc">Full itinerary · May 31 – June 5, 2026 · Buahan, a Banyan Tree Escape</p>
-    <div class="legend">
-      <span class="pill pill-anchor">Anchor Moment</span>
-      <span class="pill pill-giveback">Give Back</span>
-      <span class="pill pill-optional">Optional</span>
-      <span class="pill pill-free">Free Time</span>
-      <span class="pill pill-logistics">Logistics</span>
-      <span class="pill pill-tbd">TBD</span>
-    </div>
+ <div class="section-intro">
+  <h2 class="section-title">The Schedule</h2>
+  <p class="section-desc">Full itinerary · May 31 – June 5, 2026 · Buahan, a Banyan Tree Escape</p>
+  <div class="legend">
+   <span class="pill pill-anchor">Anchor Moment</span>
+   <span class="pill pill-giveback">Give Back</span>
+   <span class="pill pill-optional">Optional</span>
+   <span class="pill pill-free">Free Time</span>
+   <span class="pill pill-logistics">Logistics</span>
+   <span class="pill pill-TBD">TBD</span>
   </div>
+ </div>
 
-  <!-- MAY 31 -->
-  <div class="day-card">
-    <div class="day-header day-violet">
-      <div class="day-title-wrap">
-        <h3 class="day-title">Sunday, May 31 — A Full Moon Welcome</h3>
-        <p class="day-sub">Arrival · Canang Sari ceremony · First night together · <a href="https://balidriverandtour.com/balinese-full-moon-celebration/" target="_blank">What is Purnama?</a></p>
-      </div>
-      
-    </div>
-    <div class="day-body">
-      <div class="sched-block"><div class="sched-time">~2:00 pm</div><div class="sched-content"><div class="sched-label">Arrive Buahan — check in, settle in, explore</div><div class="sched-note">Two-hour drive from DPS. Karen, Taylor, and Dusty have been on property since May 29. Full group together for the first time.</div><div class="sched-who">All guests</div><span class="pill pill-logistics">Logistics</span></div></div>
-      <div class="free-block">◇ Afternoon — Free time · Pool · Unpack · Rest · Explore</div>
-      <div class="sched-block"><div class="sched-time">5:00 pm</div><div class="sched-content"><div class="sched-label">Canang Sari Offering Workshop</div><div class="sched-note">A local Balinese priest leads the group in making traditional flower offerings — small palm-leaf baskets filled with flowers, incense, and symbolic items offered in gratitude. Afterward, the group walks to Buahan's on-property mini temple to place the offerings. Confirm attire with Dian — sarongs may be provided.</div><div class="sched-who">All guests</div><span class="pill pill-anchor">Anchor Moment</span></div></div>
-      <div class="sched-block"><div class="sched-time">~6:30 pm</div><div class="sched-content"><div class="sched-label">Moon Yoga at the Pavilion</div><div class="sched-note">As the full moon rises over the jungle. Cost TBD from Dian.</div><span class="pill pill-optional">Optional</span></div></div>
-      <div class="sched-block"><div class="sched-time">7:30 pm</div><div class="sched-content"><div class="sched-label">Cocktails at The Botanist Bar</div><div class="sched-note">The group's first real gathering. Informal, easy — everyone getting settled.</div></div></div>
-      <div class="sched-block"><div class="sched-time">8:00 pm</div><div class="sched-content"><div class="sched-label">Dinner at Open Kitchen</div><div class="sched-note">Casual and communal. First night in Bali.</div></div></div>
-    </div>
+ <!-- MAY 31 -->
+ <div class="day-card">
+  <div class="day-header day-violet">
+   <div class="day-title-wrap">
+    <h3 class="day-title">Sunday, May 31 — Purnama: A Full Moon Welcome</h3>
+    <p class="day-sub">Arrival · Canang Sari ceremony · First night together · <a href="https://balidriverandtour.com/balinese-full-moon-celebration/" target="_blank">What is Purnama?</a></p>
+   </div>
+   
   </div>
+  <div class="day-body">
+   <div class="sched-block"><div class="sched-time">~2:00 pm</div><div class="sched-content"><div class="sched-label">Arrive Buahan — check in, settle in, explore</div><div class="sched-note">Two-hour drive from DPS. Karen, Taylor, and Dusty have been on property since May 29. Full group together for the first time.</div><div class="sched-who">All guests</div><span class="pill pill-logistics">Logistics</span></div></div>
+   <div class="free-block">◇ Afternoon — Free time · Pool · Unpack · Rest · Explore</div>
+   <div class="sched-block"><div class="sched-time">5:00 pm</div><div class="sched-content"><div class="sched-label">Canang Sari Offering Workshop</div><div class="sched-note">A local Balinese priest leads the group in making traditional flower offerings — small palm-leaf baskets filled with flowers, incense, and symbolic items offered in gratitude. Afterward, the group walks to Buahan's on-property mini temple to place the offerings. Confirm attire with Dian — sarongs may be provided.</div><div class="sched-who">All guests</div><span class="pill pill-anchor">Anchor Moment</span></div></div>
+   <div class="sched-block"><div class="sched-time">~6:30 pm</div><div class="sched-content"><div class="sched-label">Moon Yoga at the Pavilion</div><div class="sched-note">As the full moon rises over the jungle. Cost TBD from Dian.</div><span class="pill pill-optional">Optional</span></div></div>
+   <div class="sched-block"><div class="sched-time">7:30 pm</div><div class="sched-content"><div class="sched-label">Cocktails at The Botanist Bar</div><div class="sched-note">The group's first real gathering. Informal, easy — everyone getting settled.</div></div></div>
+   <div class="sched-block"><div class="sched-time">8:00 pm</div><div class="sched-content"><div class="sched-label">Dinner at Open Kitchen</div><div class="sched-note">Casual and communal. First night in Bali.</div></div></div>
+  </div>
+ </div>
 
-  <!-- JUNE 1 -->
-  <div class="day-card">
-    <div class="day-header day-coral">
-      <div class="day-title-wrap">
-        <h3 class="day-title">Monday, June 1 — Robin's 60th Birthday</h3>
-        <p class="day-sub">The main event · Joy · Celebration</p>
-      </div>
-      
-    </div>
-    <div class="day-body">
-      <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Breakfast at Open Kitchen</div></div></div>
-      <div class="sched-block"><div class="sched-time">8:00 am</div><div class="sched-content"><div class="sched-label">Surya Hatta Yoga</div><div class="sched-note">Optional — included in stay. Standing flow asanas.</div><span class="pill pill-optional">Optional</span></div></div>
-      <div class="sched-block"><div class="sched-time">10:00 am</div><div class="sched-content"><div class="sched-label">Buahan Bliss Massages</div><div class="sched-note">Morning slots (9am–12pm): 2 couples. Afternoon slots (2pm–5pm): 2 couples + 1 single. Three treatment rooms — guest assignments needed. See Guest Decisions tab.</div><span class="pill pill-optional">Optional</span></div></div>
-      <div class="sched-block"><div class="sched-time">12:00 pm</div><div class="sched-content"><div class="sched-label">Traditional Coconut Oil Crafting</div><div class="sched-note">Optional — included in stay. In Buahan's traditional Balinese kitchen with local women.</div><span class="pill pill-optional">Optional</span></div></div>
-      <div class="free-block">◇ Midday — Free time · Pool · Rest before the evening</div>
-      <div class="sched-block"><div class="sched-time">4:30 – 9:30 pm</div><div class="sched-content"><div class="sched-label">Robin's birthday celebration</div><div class="sched-note">An evening celebrating Robin. Cocktails and canapés followed by dinner at the Pavilion. Wine and champagne by the bottle.</div><div class="dress-code">🌿 <strong>Dusk in the Jungle</strong> — Leave the little black dress at home. Tonight we dress like the jungle threw a dinner party and personally invited us. Think flowing fabrics, botanical prints, warm colors, and a little magic. Smart-casual Bali style — the vibe is lush, not stuffy.</div><div class="sched-who">All guests</div><span class="pill pill-anchor">Anchor Moment</span></div></div>
-      <div class="sched-block"><div class="sched-time">~9:30 pm</div><div class="sched-content"><div class="sched-label">The Blue Door, Ubud — pending confirmation</div><div class="sched-note">Robin loves to dance. After-dinner dancing in Ubud — beer garden with live music, Club Lounge opens 9pm with DJ sets until 3am. ~30-40 min drive.</div><a class="sched-link" href="https://www.instagram.com/thebluedoorbali/" target="_blank">@thebluedoorbali</a><span class="pill pill-optional">Optional</span></div></div>
-    </div>
+ <!-- JUNE 1 -->
+ <div class="day-card">
+  <div class="day-header day-coral">
+   <div class="day-title-wrap">
+    <h3 class="day-title">Monday, June 1 — Robin's 60th Birthday</h3>
+    <p class="day-sub">The main event · Joy · Celebration</p>
+   </div>
+   
   </div>
+  <div class="day-body">
+   <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Breakfast at Open Kitchen</div></div></div>
+   <div class="sched-block"><div class="sched-time">8:00 am</div><div class="sched-content"><div class="sched-label">Surya Hatta Yoga</div><div class="sched-note">Optional — included in stay. Standing flow asanas.</div><span class="pill pill-optional">Optional</span></div></div>
+   <div class="sched-block"><div class="sched-time">10:00 am</div><div class="sched-content"><div class="sched-label">Buahan Bliss Massages</div><div class="sched-note">Morning slots (9am–12pm): 2 couples. Afternoon slots (2pm–5pm): 2 couples + 1 single. Three treatment rooms — guest assignments needed. See Guest Decisions tab.</div><span class="pill pill-optional">Optional</span></div></div>
+   <div class="sched-block"><div class="sched-time">12:00 pm</div><div class="sched-content"><div class="sched-label">Traditional Coconut Oil Crafting</div><div class="sched-note">Optional — included in stay. In Buahan's traditional Balinese kitchen with local women.</div><span class="pill pill-optional">Optional</span></div></div>
+   <div class="free-block">◇ Midday — Free time · Pool · Rest before the evening</div>
+   <div class="sched-block"><div class="sched-time">4:30 – 9:30 pm</div><div class="sched-content"><div class="sched-label">Robin's birthday celebration</div><div class="sched-note">An evening celebrating Robin. Cocktails and canapés followed by dinner at the Pavilion. Wine and champagne by the bottle.</div><div class="dress-code">🌿 <strong>Dusk in the Jungle</strong> — Leave the little black dress at home. Tonight we dress like the jungle threw a dinner party and personally invited us. Think flowing fabrics, botanical prints, warm colors, and a little magic. Smart-casual Bali style — the vibe is lush, not stuffy.</div><div class="sched-who">All guests</div><span class="pill pill-anchor">Anchor Moment</span></div></div>
+   <div class="sched-block"><div class="sched-time">~9:30 pm</div><div class="sched-content"><div class="sched-label">The Blue Door, Ubud — pending confirmation</div><div class="sched-note">Robin loves to dance. After-dinner dancing in Ubud — beer garden with live music, Club Lounge opens 9pm with DJ sets until 3am. ~30–40 min drive.</div><a class="sched-link" href="https://www.instagram.com/thebluedoorbali/" target="_blank">@thebluedoorbali</a><span class="pill pill-optional">Optional</span></div></div>
+  </div>
+ </div>
 
-  <!-- JUNE 2 -->
-  <div class="day-card">
-    <div class="day-header day-gold">
-      <div class="day-title-wrap">
-        <h3 class="day-title">Tuesday, June 2 — Into the Jungle</h3>
-        <p class="day-sub">Recovery · Jungle cooking · Early night for hikers</p>
-      </div>
-    </div>
-    <div class="day-body">
-      <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Breakfast at Open Kitchen</div></div></div>
-      <div class="sched-block"><div class="sched-time">8:00 am</div><div class="sched-content"><div class="sched-label">Element Pilates</div><div class="sched-note">Mat Pilates at The Pavilion — core strength and flexibility. A gentle start after the birthday.</div><span class="pill pill-optional">Optional</span></div></div>
-      <div class="sched-block"><div class="sched-time">10:00 am</div><div class="sched-content"><div class="sched-label">Jungle Cooking at Dukuh Asri</div><div class="sched-note">Venture into Buahan's jungle-edge community farm. Forage wild herbs and witness teakwood harvesting, then cook the harvest over an open flame. Farm-to-table lunch with live music under the trees. ~2-3 hours. IDR 2,200,000++ per person.</div><span class="pill pill-optional">Optional</span></div></div>
-      <div class="free-block">◇ Afternoon — Free time · Pool · Rest</div>
-      <div class="sched-block"><div class="sched-time">Afternoon</div><div class="sched-content"><div class="sched-label">Afternoon activity — TBD</div><div class="sched-note">Dian is still looking for the right option for this afternoon.</div><span class="pill pill-tbd">TBD</span></div></div>
-      <div class="sched-block"><div class="sched-time">6:00 – 7:00 pm</div><div class="sched-content"><div class="sched-label">Sundown Cocktail with Storytelling</div><div class="sched-note">Beneath the trees and open sky, share your story as the resort shares theirs. A daily Buahan ritual.</div></div></div>
-      <div class="sched-block"><div class="sched-time">7:00 pm</div><div class="sched-content"><div class="sched-label">Dinner at Open Kitchen</div><div class="sched-note">Early night recommended for those planning the 2:00am hike departure.</div></div></div>
-    </div>
+ <!-- JUNE 2 -->
+ <div class="day-card">
+  <div class="day-header day-gold">
+   <div class="day-title-wrap">
+    <h3 class="day-title">Tuesday, June 2 — Into the Jungle</h3>
+    <p class="day-sub">Recovery · Jungle cooking · Early night for hikers</p>
+   </div>
   </div>
+  <div class="day-body">
+   <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Breakfast at Open Kitchen</div></div></div>
+   <div class="sched-block"><div class="sched-time">8:00 am</div><div class="sched-content"><div class="sched-label">Element Pilates</div><div class="sched-note">Mat Pilates at The Pavilion — core strength and flexibility. A gentle start after the birthday.</div><span class="pill pill-optional">Optional</span></div></div>
+   <div class="sched-block"><div class="sched-time">10:00 am</div><div class="sched-content"><div class="sched-label">Jungle Cooking at Dukuh Asri</div><div class="sched-note">Venture into Buahan's jungle-edge community farm. Forage wild herbs, witness teakwood harvesting, then cook the harvest over an open flame. Farm-to-table lunch with live music under the trees. ~2–3 hours. IDR 2,200,000++ per person.</div><span class="pill pill-optional">Optional</span></div></div>
+   <div class="free-block">◇ Afternoon — Free time · Pool · Rest</div>
+   <div class="sched-block"><div class="sched-time">Afternoon</div><div class="sched-content"><div class="sched-label">Afternoon activity — TBD</div><div class="sched-note">Dian is still looking for the right option for this afternoon.</div><span class="pill pill-TBD">TBD</span></div></div>
+   <div class="sched-block"><div class="sched-time">6:00 – 7:00 pm</div><div class="sched-content"><div class="sched-label">Sundown Cocktail with Storytelling</div><div class="sched-note">Beneath the trees and open sky, share your story as the resort shares theirs. A daily Buahan ritual.</div></div></div>
+   <div class="sched-block"><div class="sched-time">7:00 pm</div><div class="sched-content"><div class="sched-label">Dinner at Open Kitchen</div><div class="sched-note">Early night recommended for those planning the 2:00am hike departure.</div></div></div>
+  </div>
+ </div>
 
-  <!-- JUNE 3 -->
-  <div class="day-card">
-    <div class="day-header day-teal">
-      <div class="day-title-wrap">
-        <h3 class="day-title">Wednesday, June 3 — Fire and Feast</h3>
-        <p class="day-sub">Mount Batur sunrise hike · Caldera views · Locavore NXT dinner</p>
-      </div>
-      
-    </div>
-    <div class="day-body">
-      <div class="sched-block"><div class="sched-time">2:00 am</div><div class="sched-content"><div class="sched-label">Departure — Hike to the Peak</div><div class="sched-note">Buahan's guided package. Pickup at 2:00am per Dian. IDR 3,700,000++ per couple · IDR 2,700,000++ single.</div><span class="pill pill-optional">Optional</span></div></div>
-      <div class="travel-block">→ ~1 hour drive to Mount Batur trailhead</div>
-      <div class="sched-block"><div class="sched-time">3:00 am</div><div class="sched-content"><div class="sched-label">Hike begins — Mount Batur (1,717m)</div><div class="sched-note">Pre-dawn climb through ancient tropical forest with a local guide. Timing confirmed by Dian.</div></div></div>
-      <div class="sched-block"><div class="sched-time">~5:00 am</div><div class="sched-content"><div class="sched-label">Summit — sunrise and volcanic steam breakfast</div><div class="sched-note">Eggs cooked on volcanic steam at the summit. Panoramic views across eastern Bali. Worth every step.</div></div></div>
-      <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Begin Descent</div></div></div>
-      <div class="sched-block"><div class="sched-time">~8:30 am</div><div class="sched-content"><div class="sched-label">Optional — Hot springs and caldera-view lunch</div><div class="sched-note">After the hike, we can add Toya Devasya hot springs on Lake Batur and a caldera-view lunch at Penelokan rim. The group decides after the hike.</div><span class="pill pill-optional">Optional</span></div></div>
-      <div class="travel-block">→ ~1–1.5 hour drive back to Buahan</div>
-      <div class="sched-block"><div class="sched-time">Morning to early afternoon</div><div class="sched-content"><div class="sched-label">Return to Buahan — timing TBD</div><div class="sched-note">What we do after the hike is TBD. We may return directly or stop along the way.</div><span class="pill pill-tbd">TBD</span></div></div>
-      <div class="free-block">◇ Afternoon — Free time · Pool · Rest and recover</div>
-      <div class="sched-block"><div class="sched-time">7:00 pm</div><div class="sched-content"><div class="sched-label">Locavore NXT dinner — Lodtunduh, Ubud</div><div class="sched-note">Booked for 9 guests at 7:00pm. A deposit of IDR 1,500,000 per person has already been made. 12-course modern Indonesian tasting menu — foraged ingredients, on-site mushroom farm, food lab. The finest meal in Bali. ~3 hours. Resort drives the group; return via Grab.</div><div class="sched-who">All guests</div><a class="sched-link" href="https://locavorenxt.com" target="_blank">locavorenxt.com</a><span class="pill pill-anchor">Anchor Moment</span></div></div>
-      <div class="travel-block">→ ~30 min drive to Locavore NXT · Return via Grab</div>
-      <div class="sched-block"><div class="sched-time">After dinner</div><div class="sched-content"><div class="sched-label">A night out in Ubud — if we wish</div><div class="sched-note">We're already in Ubud and can enjoy a night out there if we wish.</div><span class="pill pill-optional">Optional</span></div></div>
-    </div>
+ <!-- JUNE 3 -->
+ <div class="day-card">
+  <div class="day-header day-teal">
+   <div class="day-title-wrap">
+    <h3 class="day-title">Wednesday, June 3 — Fire and Feast</h3>
+    <p class="day-sub">Mount Batur sunrise hike · Caldera views · Locavore NXT dinner</p>
+   </div>
+   
   </div>
+  <div class="day-body">
+   <div class="sched-block"><div class="sched-time">2:00 am</div><div class="sched-content"><div class="sched-label">Departure — Hike to the Peak</div><div class="sched-note">Buahan's guided package. Pickup at 2:00am per Dian. IDR 3,700,000++ per couple · IDR 2,700,000++ single.</div><span class="pill pill-optional">Optional</span></div></div>
+   <div class="travel-block">→ ~1 hour drive to Mount Batur trailhead</div>
+   <div class="sched-block"><div class="sched-time">3:00 am</div><div class="sched-content"><div class="sched-label">Hike begins — Mount Batur (1,717m)</div><div class="sched-note">Pre-dawn climb through ancient tropical forest with a local guide. Timing confirmed by Dian.</div></div></div>
+   <div class="sched-block"><div class="sched-time">~5:00 am</div><div class="sched-content"><div class="sched-label">Summit — sunrise and volcanic steam breakfast</div><div class="sched-note">Eggs cooked on volcanic steam at the summit. Panoramic views across eastern Bali. Worth every step.</div></div></div>
+   <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Begin Descent</div></div></div>
+   <div class="sched-block"><div class="sched-time">~8:30 am</div><div class="sched-content"><div class="sched-label">Optional — Hot springs and caldera-view lunch</div><div class="sched-note">After the hike, we can add Toya Devasya hot springs on Lake Batur and a caldera-view lunch at Penelokan rim. The group decides after the hike.</div><span class="pill pill-optional">Optional</span></div></div>
+   <div class="travel-block">→ ~1–1.5 hour drive back to Buahan</div>
+   <div class="sched-block"><div class="sched-time">Morning to early afternoon</div><div class="sched-content"><div class="sched-label">Return to Buahan — timing TBD</div><div class="sched-note">What we do after the hike is TBD. We may return directly or stop along the way.</div><span class="pill pill-TBD">TBD</span></div></div>
+   <div class="free-block">◇ Afternoon — Free time · Pool · Rest and recover</div>
+   <div class="sched-block"><div class="sched-time">7:00 pm</div><div class="sched-content"><div class="sched-label">Locavore NXT dinner — Lodtunduh, Ubud</div><div class="sched-note">Booked for 9 guests at 7:00pm. A deposit of IDR 1,500,000 per person has already been made. 12-course modern Indonesian tasting menu — foraged ingredients, on-site mushroom farm, food lab. ~3 hours. Resort drives the group; return via Grab.</div><div class="sched-who">All guests</div><a class="sched-link" href="https://locavorenxt.com" target="_blank">locavorenxt.com</a><span class="pill pill-anchor">Anchor Moment</span></div></div>
+   <div class="travel-block">→ ~30-minute drive to Locavore NXT · Return via Grab</div>
+   <div class="sched-block"><div class="sched-time">After dinner</div><div class="sched-content"><div class="sched-label">A night out in Ubud — if we wish</div><div class="sched-note">We're already in Ubud and can enjoy a night out there if we wish.</div><span class="pill pill-optional">Optional</span></div></div>
+  </div>
+ </div>
 
-  <!-- JUNE 4 -->
-  <div class="day-card">
-    <div class="day-header day-slate">
-      <div class="day-title-wrap">
-        <h3 class="day-title">Thursday, June 4 — Give, Purify, Farewell</h3>
-        <p class="day-sub">School visit · Soul Freedom · Farewell dinner · 5 guests depart</p>
-      </div>
-      
-    </div>
-    <div class="day-body">
-      <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Breakfast at Open Kitchen</div></div></div>
-      <div class="sched-block"><div class="sched-time">8:00 am</div><div class="sched-content"><div class="sched-label">Surya Hatta Yoga</div><div class="sched-note">Optional — included in stay.</div><span class="pill pill-optional">Optional</span></div></div>
-      <div class="sched-block"><div class="sched-time">9 or 10 am</div><div class="sched-content"><div class="sched-label">Village School Visit — SDN 2 Buahan</div><div class="sched-note">Five minutes from the resort. Elementary school visit aligned with Karen's Alpaca mission. Buahan's sustainability team accompanies. Bring storybooks and teaching supplies. ~45 minutes. Timing and gifts TBD with Dian and Karen.</div><div class="sched-who">All guests</div><span class="pill pill-giveback">Give Back</span></div></div>
-      <div class="free-block">◇ Late morning — Free time · Pool · Lunch at leisure</div>
-      <div class="sched-block"><div class="sched-time">2:00 pm</div><div class="sched-content"><div class="sched-label">Soul Freedom Journey — Tjampuhan Waterfall</div><div class="sched-note">Guided by a Buahan Discovery Host and Balinese priest. Traditional attire, trek through the sacred valley, Melukat purification ritual at the confluence of sacred rivers. One of the most meaningful experiences of the trip.</div><div class="sched-who">All guests</div><span class="pill pill-anchor">Anchor Moment</span></div></div>
-      <div class="travel-block">→ ~30 min drive to Ubud · Dian arranging transport</div>
-      <div class="sched-block"><div class="sched-time">Evening</div><div class="sched-content"><div class="sched-label">Farewell dinner in Ubud — Tangelo Bali (recommended)</div><div class="sched-note">Dinner for all 9. Open-air, global-Balinese fusion. On Mondays, the Spirit of Sebatu Balinese dance takes place during dinner. Confirm booking.</div><div class="sched-who">All guests</div><a class="sched-link" href="https://www.instagram.com/tangelobali/" target="_blank">@tangelobali</a></div></div>
-      <div class="sched-block"><div class="sched-time">After dinner</div><div class="sched-content"><div class="sched-label">Farewell Drinks · Group Splits</div><div class="sched-note">Karen, Taylor, Dusty, John, and Allison transfer directly from Ubud to DPS. Aaron, Robin, Andy, and Julie return to Buahan via Grab.</div><span class="pill pill-logistics">Logistics</span></div></div>
-      <div class="sched-block"><div class="sched-time">~10:00 pm</div><div class="sched-content"><div class="sched-label">Karen, Taylor, Dusty, Allison & John depart for DPS</div><div class="sched-note">Flight 1:00am June 5. A beautiful send-off from Ubud.</div><div class="sched-who">Karen · Taylor · Dusty · Allison · John</div><span class="pill pill-logistics">Logistics</span></div></div>
-    </div>
+ <!-- JUNE 4 -->
+ <div class="day-card">
+  <div class="day-header day-slate">
+   <div class="day-title-wrap">
+    <h3 class="day-title">Thursday, June 4 — Give, Purify, Farewell</h3>
+    <p class="day-sub">School visit · Soul Freedom · Farewell dinner · 5 guests depart</p>
+   </div>
+   
   </div>
+  <div class="day-body">
+   <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Breakfast at Open Kitchen</div></div></div>
+   <div class="sched-block"><div class="sched-time">8:00 am</div><div class="sched-content"><div class="sched-label">Surya Hatta Yoga</div><div class="sched-note">Optional — included in stay.</div><span class="pill pill-optional">Optional</span></div></div>
+   <div class="sched-block"><div class="sched-time">9 or 10 am</div><div class="sched-content"><div class="sched-label">Village School Visit — SDN 2 Buahan</div><div class="sched-note">Five minutes from the resort. Elementary school visit aligned with Karen's Alpaca mission. Buahan's sustainability team accompanies. Bring storybooks and teaching supplies. ~45 minutes. Timing and gifts TBD with Dian and Karen.</div><div class="sched-who">All guests</div><span class="pill pill-giveback">Give Back</span></div></div>
+   <div class="free-block">◇ Late morning — Free time · Pool · Lunch at leisure</div>
+   <div class="sched-block"><div class="sched-time">2:00 pm</div><div class="sched-content"><div class="sched-label">Soul Freedom Journey — Tjampuhan Waterfall</div><div class="sched-note">Guided by a Buahan Discovery Host and Balinese priest. Traditional attire, trek through the sacred valley, Melukat purification ritual at the confluence of sacred rivers. One of the most meaningful experiences of the trip.</div><div class="sched-who">All guests</div><span class="pill pill-anchor">Anchor Moment</span></div></div>
+   <div class="travel-block">→ ~30-minute drive to Ubud · Dian arranging transport</div>
+   <div class="sched-block"><div class="sched-time">Evening</div><div class="sched-content"><div class="sched-label">Farewell dinner in Ubud — Tangelo Bali (recommended)</div><div class="sched-note">Dinner for all 9. Open-air, global-Balinese fusion. On Mondays, the Spirit of Sebatu Balinese dance takes place during dinner. Confirm booking.</div><div class="sched-who">All guests</div><a class="sched-link" href="https://www.instagram.com/tangelobali/" target="_blank">@tangelobali</a></div></div>
+   <div class="sched-block"><div class="sched-time">After dinner</div><div class="sched-content"><div class="sched-label">Farewell Drinks · Group Splits</div><div class="sched-note">Karen, Taylor, Dusty, John, and Allison transfer directly from Ubud to DPS. Aaron, Robin, Andy, and Julie return to Buahan via Grab.</div><span class="pill pill-logistics">Logistics</span></div></div>
+   <div class="sched-block"><div class="sched-time">~10:00 pm</div><div class="sched-content"><div class="sched-label">Karen, Taylor, Dusty, Allison & John depart for DPS</div><div class="sched-note">Flight 1:00 am June 5. A beautiful send-off from Ubud.</div><div class="sched-who">Karen · Taylor · Dusty · Allison · John</div><span class="pill pill-logistics">Logistics</span></div></div>
+  </div>
+ </div>
 
-  <!-- JUNE 5 -->
-  <div class="day-card">
-    <div class="day-header day-violet">
-      <div class="day-title-wrap">
-        <h3 class="day-title">Friday, June 5 — Until We Meet Again</h3>
-        <p class="day-sub">Final morning · Buahan chapter closes</p>
-      </div>
-      
-    </div>
-    <div class="day-body">
-      <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Farewell breakfast at Open Kitchen</div></div></div>
-      <div class="sched-block"><div class="sched-time">8:00 am</div><div class="sched-content"><div class="sched-label">Element Pilates</div><div class="sched-note">Optional.</div><span class="pill pill-optional">Optional</span></div></div>
-      <div class="free-block">◇ Morning — Final swim · Pack · Soak it all in</div>
-      <div class="sched-block"><div class="sched-time">12:00 pm</div><div class="sched-content"><div class="sched-label">Check out from Buahan</div><div class="sched-who">Robin · Aaron · Andy · Julie</div><span class="pill pill-logistics">Logistics</span></div></div>
-      <div class="travel-block">→ ~2-hour drive to DPS-area hotel</div>
-      <div class="sched-block"><div class="sched-time">Evening</div><div class="sched-content"><div class="sched-label">DPS-area hotel — TBD</div><div class="sched-note">We may or may not need a hotel this night. Julie departs DPS at ~1:00am June 6, and Robin, Aaron, and Andy may also fly out at the same time — to Raja Ampat (TBD). Dian is sourcing options in case we need them.</div><div class="sched-who">Robin · Aaron · Andy · Julie</div></div></div>
-      <div class="sched-block"><div class="sched-time">~11:30 pm</div><div class="sched-content"><div class="sched-label">Julie departs for DPS</div><div class="sched-note">Flight 1:00am June 6. Aaron and Robin accompany, then return to hotel.</div><div class="sched-who">Julie · Robin · Aaron</div><span class="pill pill-logistics">Logistics</span></div></div>
-    </div>
+ <!-- JUNE 5 -->
+ <div class="day-card">
+  <div class="day-header day-violet">
+   <div class="day-title-wrap">
+    <h3 class="day-title">Friday, June 5 — Until We Meet Again</h3>
+    <p class="day-sub">Final morning · Buahan chapter closes</p>
+   </div>
+   
   </div>
+  <div class="day-body">
+   <div class="sched-block"><div class="sched-time">7:00 am</div><div class="sched-content"><div class="sched-label">Farewell breakfast at Open Kitchen</div></div></div>
+   <div class="sched-block"><div class="sched-time">8:00 am</div><div class="sched-content"><div class="sched-label">Element Pilates</div><div class="sched-note">Optional.</div><span class="pill pill-optional">Optional</span></div></div>
+   <div class="free-block">◇ Morning — Final swim · Pack · Soak it all in</div>
+   <div class="sched-block"><div class="sched-time">12:00 pm</div><div class="sched-content"><div class="sched-label">Check out from Buahan</div><div class="sched-who">Robin · Aaron · Andy · Julie</div><span class="pill pill-logistics">Logistics</span></div></div>
+   <div class="travel-block">→ ~2-hour drive to DPS-area hotel</div>
+   <div class="sched-block"><div class="sched-time">Evening</div><div class="sched-content"><div class="sched-label">DPS-area hotel — TBD</div><div class="sched-note">We may or may not need a hotel this night. Julie departs DPS at ~1:00 am June 6, and Robin, Aaron, and Andy may also fly out at the same time — to Raja Ampat (TBD). Dian is sourcing options in case we need them.</div><div class="sched-who">Robin · Aaron · Andy · Julie</div></div></div>
+   <div class="sched-block"><div class="sched-time">~11:30 pm</div><div class="sched-content"><div class="sched-label">Julie departs for DPS</div><div class="sched-note">Flight 1:00 am June 6. Aaron and Robin accompany, then return to hotel.</div><div class="sched-who">Julie · Robin · Aaron</div><span class="pill pill-logistics">Logistics</span></div></div>
+  </div>
+ </div>
 
-  <!-- JUNE 6+ -->
-  <div class="day-card">
-    <div class="day-header day-teal">
-      <div class="day-title-wrap">
-        <h3 class="day-title">June 6 onward — Beach Time</h3>
-        <p class="day-sub">Robin · Aaron · Andy · Destination TBD</p>
-      </div>
-    </div>
-    <div class="day-body">
-      <div class="sched-block"><div class="sched-time">June 6+</div><div class="sched-content"><div class="sched-label">TBD</div><div class="sched-note">Destination and plans to be confirmed.</div><span class="pill pill-tbd">TBD</span></div></div>
-    </div>
+ <!-- JUNE 6+ -->
+ <div class="day-card">
+  <div class="day-header day-teal">
+   <div class="day-title-wrap">
+    <h3 class="day-title">June 6 onward — Beach Time</h3>
+    <p class="day-sub">Robin · Aaron · Andy · Destination TBD</p>
+   </div>
   </div>
+  <div class="day-body">
+   <div class="sched-block"><div class="sched-time">June 6+</div><div class="sched-content"><div class="sched-label">TBD</div><div class="sched-note">Destination and plans to be confirmed.</div><span class="pill pill-TBD">TBD</span></div></div>
+  </div>
+ </div>
 </section>
 
 <!-- ═══ ARRIVALS ═══ -->
 <section class="tab-panel" id="tab-arrivals">
-  <div class="section-intro">
-    <h2 class="section-title">Arrivals & Departures</h2>
-    <p class="section-desc">Flight details and transfer information for all 9 guests</p>
-  </div>
-  <div class="table-wrap">
-    <table class="data-table">
-      <thead><tr><th>Guest</th><th>Arrives DPS</th><th>Flight</th><th>Buahan Arrival</th><th>Departs Buahan</th><th>Departs DPS</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Robin & Aaron Shaddy</strong></td><td>May 31, 12:00pm</td><td>SQ938 from SIN</td><td>May 31, ~2:00pm</td><td>June 5, 12:00pm</td><td class="tbd">TBD</td></tr>
-        <tr><td><strong>Allison & John Ashford</strong></td><td>May 31, 12:00pm</td><td>SQ938 from SIN</td><td>May 31, ~2:00pm</td><td>June 4 (from Ubud)</td><td>June 5, 1:00am</td></tr>
-        <tr><td><strong>Karen & Taylor Borchert</strong></td><td>May 28, 11:50pm</td><td>KE433</td><td>May 29, ~2:00am</td><td>June 4 (from Ubud)</td><td>June 5, 1:00am</td></tr>
-        <tr><td><strong>Dusty Davidson</strong></td><td>May 28, 11:50pm</td><td>KE433</td><td>May 29, ~2:00am</td><td>June 4 (from Ubud)</td><td>June 5, 1:00am</td></tr>
-        <tr><td><strong>Julie DeWitt</strong></td><td>May 28, 10:30pm</td><td>VS65 (Virgin Atlantic)</td><td>May 31, ~2:00pm</td><td>June 5, 12:00pm</td><td>June 6, 1:00am</td></tr>
-        <tr><td><strong>Andy Stoll</strong></td><td>May 28, 10:30pm</td><td>VS65 (Virgin Atlantic)</td><td>May 31, ~2:00pm</td><td>June 5, 12:00pm</td><td class="tbd">TBD</td></tr>
-      </tbody>
-    </table>
-  </div>
+ <div class="section-intro">
+  <h2 class="section-title">Arrivals & Departures</h2>
+  <p class="section-desc">Flight details and transfer information for all 9 guests</p>
+ </div>
+ <div class="table-wrap">
+  <table class="data-table">
+   <thead><tr><th>Guest</th><th>Arrives DPS</th><th>Flight</th><th>Buahan Arrival</th><th>Departs Buahan</th><th>Departs DPS</th></tr></thead>
+   <tbody>
+    <tr><td><strong>Robin & Aaron Shaddy</strong></td><td>May 31, 12:00pm</td><td>SQ938 from SIN</td><td>May 31, ~2:00pm</td><td>June 5, 12:00pm</td><td class="TBD">TBD</td></tr>
+    <tr><td><strong>Allison & John Ashford</strong></td><td>May 31, 12:00pm</td><td>SQ938 from SIN</td><td>May 31, ~2:00pm</td><td>June 4 (from Ubud)</td><td>June 5, 1:00am</td></tr>
+    <tr><td><strong>Karen & Taylor Borchert</strong></td><td>May 28, 11:50pm</td><td>KE433</td><td>May 29, ~2:00am</td><td>June 4 (from Ubud)</td><td>June 5, 1:00am</td></tr>
+    <tr><td><strong>Dusty Davidson</strong></td><td>May 28, 11:50pm</td><td>KE433</td><td>May 29, ~2:00am</td><td>June 4 (from Ubud)</td><td>June 5, 1:00am</td></tr>
+    <tr><td><strong>Julie DeWitt</strong></td><td>May 28, 10:30pm</td><td>VS65 (Virgin Atlantic)</td><td>May 31, ~2:00pm</td><td>June 5, 12:00pm</td><td>June 6, 1:00am</td></tr>
+    <tr><td><strong>Andy Stoll</strong></td><td>May 28, 10:30pm</td><td>VS65 (Virgin Atlantic)</td><td>May 31, ~2:00pm</td><td>June 5, 12:00pm</td><td class="TBD">TBD</td></tr>
+   </tbody>
+  </table>
+ </div>
 
-  <div class="info-section">
-    <h3 class="info-heading">Transport Groups</h3>
-    <div class="transport-groups">
-      <div class="transport-group tg-violet">
-        <div class="tg-label"><strong>May 29 Group</strong></div>
-        <div class="tg-members">Karen Borchert · Taylor Borchert · Dusty Davidson</div>
-        <div class="tg-detail">Arrive DPS May 28 at 11:50pm (KE433). Taylor is coordinating the inbound transfer directly with the resort. They arrive at Buahan ~2:00am May 29.</div>
-      </div>
-      <div class="transport-group tg-coral">
-        <div class="tg-label"><strong>May 31 Group A</strong></div>
-        <div class="tg-members">Robin & Aaron Shaddy · Allison & John Ashford</div>
-        <div class="tg-detail">Arrive DPS May 31 at 12:00pm (SQ938 from Singapore). Resort arranging transport — ~2-hour drive to Buahan. Arrive ~2:00pm.</div>
-      </div>
-      <div class="transport-group tg-teal">
-        <div class="tg-label"><strong>May 31 Group B</strong></div>
-        <div class="tg-members">Julie DeWitt · Andy Stoll</div>
-        <div class="tg-detail">Julie and Andy arrive DPS May 28 at 10:30pm (VS65, Virgin Atlantic) and will be staying in Ubud May 28–31. They will arrange their own transport from Ubud and arrive at Buahan at ~2:00pm on May 31.</div>
-      </div>
-    </div>
+ <div class="info-section">
+  <h3 class="info-heading">Transport Groups</h3>
+  <div class="transport-groups">
+   <div class="transport-group tg-violet">
+    <div class="tg-label"><strong>May 29 Group</strong></div>
+    <div class="tg-members">Karen Borchert · Taylor Borchert · Dusty Davidson</div>
+    <div class="tg-detail">Arrive DPS May 28 at 11:50pm (KE433). Taylor is coordinating the inbound transfer directly with the resort. They arrive at Buahan ~2:00am May 29.</div>
+   </div>
+   <div class="transport-group tg-coral">
+    <div class="tg-label"><strong>May 31 Group A</strong></div>
+    <div class="tg-members">Robin & Aaron Shaddy · Allison & John Ashford</div>
+    <div class="tg-detail">Arrive DPS May 31 at 12:00pm (SQ938 from Singapore). Resort arranging transport — ~2-hour drive to Buahan. Arrive ~2:00pm.</div>
+   </div>
+   <div class="transport-group tg-teal">
+    <div class="tg-label"><strong>May 31 Group B</strong></div>
+    <div class="tg-members">Julie DeWitt · Andy Stoll</div>
+    <div class="tg-detail">Julie and Andy arrive DPS May 28 at 10:30pm (VS65, Virgin Atlantic) and will be staying in Ubud May 28–31. They will arrange their own transport from Ubud and arrive at Buahan at ~2:00pm on May 31.</div>
+   </div>
   </div>
+ </div>
 
-  <div class="info-section">
-    <h3 class="info-heading">Additional Transport Notes</h3>
-    <div class="info-rows">
-      <div class="info-row"><div class="info-label">All resort drives</div><div class="info-detail">The resort drives the group to all dinners and events. Returns from Ubud venues via Grab.</div></div>
-      <div class="info-row"><div class="info-label">June 4 farewell</div><div class="info-detail">Dian is arranging transport to Ubud on June 4. We can ask about a direct transfer from Ubud to the airport for the 5 departing guests.</div></div>
-      <div class="info-row"><div class="info-label">June 5 hotel</div><div class="info-detail">TBD — Julie departs DPS at ~1:00am June 6. Robin, Aaron, and Andy may also fly out that night (to Raja Ampat, TBD). A hotel may not be needed. Dian is sourcing options in case.</div></div>
-    </div>
+ <div class="info-section">
+  <h3 class="info-heading">Additional Transport Notes</h3>
+  <div class="info-rows">
+   <div class="info-row"><div class="info-label">All resort drives</div><div class="info-detail">The resort drives the group to all dinners and events. Returns from Ubud venues via Grab.</div></div>
+   <div class="info-row"><div class="info-label">June 4 farewell</div><div class="info-detail">Dian is arranging transport to Ubud on June 4. We can ask about a direct transfer from Ubud to the airport for the 5 departing guests.</div></div>
+   <div class="info-row"><div class="info-label">June 5 hotel</div><div class="info-detail">TBD — Julie departs DPS at ~1:00 am June 6. Robin, Aaron, and Andy may also fly out that night (to Raja Ampat, TBD). A hotel may not be needed. Dian is sourcing options in case.</div></div>
   </div>
+ </div>
 </section>
 
 <!-- ═══ RESORT ACTIVITIES ═══ -->
 <section class="tab-panel" id="tab-activities">
-  <div class="section-intro">
-    <h2 class="section-title">Resort Standard Activities</h2>
-    <p class="section-desc">Buahan's default daily program · Guests may participate in any of these they wish</p>
-  </div>
+ <div class="section-intro">
+  <h2 class="section-title">Resort Standard Activities</h2>
+  <p class="section-desc">Buahan's default daily program · Guests may participate in any of these they wish</p>
+ </div>
 
-  <div class="info-section">
-    <h3 class="info-heading">A Note for Runners</h3>
-    <p class="body-text">We've asked Dian for running route recommendations near the resort. Note that Buahan sits on sloping rainforest terrain, which may shape the available options. Dian's recommendations will be added here when received. The Senja on Wheels mountain biking activity (daily, included) may also appeal to the more active guests.</p>
-  </div>
+ <div class="info-section">
+  <h3 class="info-heading">A Note for Runners</h3>
+  <p class="body-text">We've asked Dian for running route recommendations near the resort. Note that Buahan sits on sloping rainforest terrain, which may shape the available options. Dian's recommendations will be added here when received. The Senja on Wheels mountain biking activity (daily, included) may also appeal to the more active guests.</p>
+ </div>
 
-  <p class="body-text">Everything below is Buahan's standard daily program. Daily activities are complimentary — included in your stay. Paid activities carry additional costs listed in the <button class="inline-tab-link" data-tab="pricing">Pricing tab</button>.</p>
+ <p class="body-text">Everything below is Buahan's standard daily program. Daily activities are complimentary — included in your stay. Paid activities carry additional costs listed in the <button class="inline-tab-link" data-tab="pricing">Pricing tab</button>.</p>
 
-  <div class="activity-day">
-    <h3 class="activity-day-title">Sunday, May 31</h3>
-    <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
-      <tr><td>6:00 pm</td><td><strong>Moon Yoga</strong> <span class="tag-inline">daily</span></td><td>Tap into energies of openness, healing, and renewal. Connecting to the full moon's phases brings awareness to rhythms within body, mind, heart, and spirit.</td></tr>
-      <tr><td>7:30 pm</td><td><strong>Cocktail Hour at The Botanist Bar</strong></td><td>Unwind with cocktails in Buahan's signature garden bar setting.</td></tr>
-      <tr><td>8:00 pm</td><td><strong>Dinner at Open Kitchen</strong></td><td>Buahan's main restaurant — open-air, communal, and farm-inspired.</td></tr>
-    </tbody></table>
-  </div>
+ <div class="activity-day">
+  <h3 class="activity-day-title">Sunday, May 31</h3>
+  <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
+   <tr><td>6:00 pm</td><td><strong>Moon Yoga</strong> <span class="tag-inline">daily</span></td><td>Tap into energies of openness, healing, and renewal. Connecting to the full moon's phases brings awareness to rhythms within body, mind, heart, and spirit.</td></tr>
+   <tr><td>7:30 pm</td><td><strong>Cocktail Hour at The Botanist Bar</strong></td><td>Unwind with cocktails in Buahan's signature garden bar setting.</td></tr>
+   <tr><td>8:00 pm</td><td><strong>Dinner at Open Kitchen</strong></td><td>Buahan's main restaurant — open-air, communal, and farm-inspired.</td></tr>
+  </tbody></table>
+ </div>
 
-  <div class="activity-day">
-    <h3 class="activity-day-title">Monday, June 1</h3>
-    <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
-      <tr><td>8:00 – 8:45 am</td><td><strong>Surya Hatta Yoga</strong> <span class="tag-inline">daily</span></td><td>Standing flow asanas to build balance, range of motion, and stability.</td></tr>
-      <tr><td>10:00 am – 12:30 pm</td><td><strong>Buahan Bliss Massage — 120 min</strong> <span class="tag-inline tag-paid">paid</span></td><td>Toja Spa's signature ritual: torch ginger scrub, stimulating body massage, and detoxifying herbal wrap. Morning slot. IDR 2,900,000++ per person.</td></tr>
-      <tr><td>12:00 – 1:00 pm</td><td><strong>Traditional Coconut Oil Crafting</strong> <span class="tag-inline">daily</span></td><td>Skilled local women guide the group through traditional Balinese recipes in the resort's open-air kitchen (paon).</td></tr>
-      <tr><td>At leisure</td><td><strong>Lunch at Open Kitchen</strong> <span class="tag-inline tag-paid">paid</span></td><td>IDR 750,000++ per person. Note: breakfast and dinner are included in the stay; lunch is not.</td></tr>
-      <tr><td>4:00 – 5:00 pm</td><td><strong>Rice Life Trekking</strong> <span class="tag-inline">daily</span></td><td>Walk through Buahan's heartland — picturesque villages and lush rice fields. Discover the centuries-old Subak irrigation system.</td></tr>
-      <tr><td>3:00 – 5:30 pm</td><td><strong>Buahan Bliss Massage — 120 min</strong> <span class="tag-inline tag-paid">paid</span></td><td>Afternoon slot. IDR 2,900,000++ per person.</td></tr>
-    </tbody></table>
-  </div>
+ <div class="activity-day">
+  <h3 class="activity-day-title">Monday, June 1</h3>
+  <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
+   <tr><td>8:00 – 8:45 am</td><td><strong>Surya Hatta Yoga</strong> <span class="tag-inline">daily</span></td><td>Standing flow asanas to build balance, range of motion, and stability.</td></tr>
+   <tr><td>10:00 am – 12:30 pm</td><td><strong>Buahan Bliss Massage — 120 min</strong> <span class="tag-inline tag-paid">paid</span></td><td>Toja Spa's signature ritual: torch ginger scrub, stimulating body massage, and detoxifying herbal wrap. Morning slot. IDR 2,900,000++ per person.</td></tr>
+   <tr><td>12:00 – 1:00 pm</td><td><strong>Traditional Coconut Oil Crafting</strong> <span class="tag-inline">daily</span></td><td>Skilled local women guide the group through traditional Balinese recipes in the resort's open-air kitchen (paon).</td></tr>
+   <tr><td>At leisure</td><td><strong>Lunch at Open Kitchen</strong> <span class="tag-inline tag-paid">paid</span></td><td>IDR 750,000++ per person. Note: breakfast and dinner are included in the stay; lunch is not.</td></tr>
+   <tr><td>4:00 – 5:00 pm</td><td><strong>Rice Life Trekking</strong> <span class="tag-inline">daily</span></td><td>Walk through Buahan's heartland — picturesque villages and lush rice fields. Discover the centuries-old Subak irrigation system.</td></tr>
+   <tr><td>3:00 – 5:30 pm</td><td><strong>Buahan Bliss Massage — 120 min</strong> <span class="tag-inline tag-paid">paid</span></td><td>Afternoon slot. IDR 2,900,000++ per person.</td></tr>
+  </tbody></table>
+ </div>
 
-  <div class="activity-day">
-    <h3 class="activity-day-title">Tuesday, June 2</h3>
-    <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
-      <tr><td>8:00 – 8:45 am</td><td><strong>Element Pilates</strong> <span class="tag-inline">daily</span></td><td>Refreshing mat Pilates at The Pavilion — core strength and flexibility for all levels.</td></tr>
-      <tr><td>11:00 am – 2:30 pm</td><td><strong>Jungle Cooking</strong> <span class="tag-inline tag-paid">paid</span></td><td>Forage wild herbs at the jungle-edge community farm, then cook the harvest over an open flame. Farm-to-table lunch with live music. IDR 2,200,000++ per person.</td></tr>
-      <tr><td>3:00 – 5:30 pm</td><td><strong>Buahan Bliss Massage — 120 min</strong> <span class="tag-inline tag-paid">paid</span></td><td>IDR 2,900,000++ per person.</td></tr>
-      <tr><td>4:00 – 5:00 pm</td><td><strong>Senja on Wheels</strong> <span class="tag-inline">daily</span></td><td>Guided mountain bike ride through local villages and rice terraces — breathtaking sunset views along the way.</td></tr>
-      <tr><td>6:00 – 7:00 pm</td><td><strong>Sundown Cocktail with Storytelling</strong> <span class="tag-inline">daily</span></td><td>Beneath the trees and open sky, share your story as Buahan shares theirs. A cherished nightly ritual.</td></tr>
-      <tr><td>7:00 pm</td><td><strong>Dinner at Open Kitchen</strong></td><td></td></tr>
-    </tbody></table>
-  </div>
+ <div class="activity-day">
+  <h3 class="activity-day-title">Tuesday, June 2</h3>
+  <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
+   <tr><td>8:00 – 8:45 am</td><td><strong>Element Pilates</strong> <span class="tag-inline">daily</span></td><td>Refreshing mat Pilates at The Pavilion — core strength and flexibility for all levels.</td></tr>
+   <tr><td>11:00 am – 2:30 pm</td><td><strong>Jungle Cooking</strong> <span class="tag-inline tag-paid">paid</span></td><td>Forage wild herbs at the jungle-edge community farm, then cook the harvest over an open flame. Farm-to-table lunch with live music. IDR 2,200,000++ per person.</td></tr>
+   <tr><td>3:00 – 5:30 pm</td><td><strong>Buahan Bliss Massage — 120 min</strong> <span class="tag-inline tag-paid">paid</span></td><td>IDR 2,900,000++ per person.</td></tr>
+   <tr><td>4:00 – 5:00 pm</td><td><strong>Senja on Wheels</strong> <span class="tag-inline">daily</span></td><td>Guided mountain bike ride through local villages and rice terraces — breathtaking sunset views along the way.</td></tr>
+   <tr><td>6:00 – 7:00 pm</td><td><strong>Sundown Cocktail with Storytelling</strong> <span class="tag-inline">daily</span></td><td>Beneath the trees and open sky, share your story as Buahan shares theirs. A cherished nightly ritual.</td></tr>
+   <tr><td>7:00 pm</td><td><strong>Dinner at Open Kitchen</strong></td><td></td></tr>
+  </tbody></table>
+ </div>
 
-  <div class="activity-day">
-    <h3 class="activity-day-title">Wednesday, June 3</h3>
-    <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
-      <tr><td>8:00 – 8:45 am</td><td><strong>Surya Hatta Yoga</strong> <span class="tag-inline">daily</span></td><td>Standing flow asanas.</td></tr>
-      <tr><td>9:00 am – 1:00 pm</td><td><strong>Tri Hita Karana</strong> <span class="tag-inline tag-paid">paid</span></td><td>Bali's philosophy of harmony with nature, community, and spirit — a half-day journey through Taro Village by vintage car. Temples, community prayers, palm forest, tree planting, coconut oil making, and a Balinese light lunch. IDR 4,900,000++ per couple.</td></tr>
-      <tr><td>4:00 – 5:30 pm</td><td><strong>Buahan Bliss Massage — 120 min</strong> <span class="tag-inline tag-paid">paid</span></td><td>IDR 2,900,000++ per person.</td></tr>
-      <tr><td>5:30 – 6:00 pm</td><td><strong>The Botanist Story</strong> <span class="tag-inline">daily</span></td><td>Explore the heritage of Arak — Bali's traditional spirit. Create your own cocktails and mocktails with the resort's skilled Botanist.</td></tr>
-      <tr><td>7:00 pm</td><td><strong>Dinner at Open Kitchen</strong></td><td></td></tr>
-    </tbody></table>
-  </div>
+ <div class="activity-day">
+  <h3 class="activity-day-title">Wednesday, June 3</h3>
+  <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
+   <tr><td>8:00 – 8:45 am</td><td><strong>Surya Hatta Yoga</strong> <span class="tag-inline">daily</span></td><td>Standing flow asanas.</td></tr>
+   <tr><td>9:00 am – 1:00 pm</td><td><strong>Tri Hita Karana</strong> <span class="tag-inline tag-paid">paid</span></td><td>Bali's philosophy of harmony with nature, community, and spirit — a half-day journey through Taro Village by vintage car. Temples, community prayers, palm forest, tree planting, coconut oil making, and a Balinese light lunch. IDR 4,900,000++ per couple.</td></tr>
+   <tr><td>4:00 – 5:30 pm</td><td><strong>Buahan Bliss Massage — 120 min</strong> <span class="tag-inline tag-paid">paid</span></td><td>IDR 2,900,000++ per person.</td></tr>
+   <tr><td>5:30 – 6:00 pm</td><td><strong>The Botanist Story</strong> <span class="tag-inline">daily</span></td><td>Explore the heritage of Arak — Bali's traditional spirit. Create your own cocktails and mocktails with the resort's skilled Botanist.</td></tr>
+   <tr><td>7:00 pm</td><td><strong>Dinner at Open Kitchen</strong></td><td></td></tr>
+  </tbody></table>
+ </div>
 
-  <div class="activity-day">
-    <h3 class="activity-day-title">Thursday, June 4</h3>
-    <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
-      <tr><td>8:00 – 8:45 am</td><td><strong>Surya Hatta Yoga</strong> <span class="tag-inline">daily</span></td><td>Standing flow asanas.</td></tr>
-      <tr><td>10:00 – 11:30 am</td><td><strong>Soul Freedom Journey</strong> <span class="tag-inline tag-paid">paid</span></td><td>Tjampuhan Waterfall — sacred rivers, Melukat purification ritual, canang sari offering, traditional Balinese attire. Guided by a Discovery Host and Balinese priest. IDR 2,500,000++ per couple.</td></tr>
-      <tr><td>12:00 – 1:00 pm</td><td><strong>Palm and Press</strong> <span class="tag-inline">daily</span></td><td>A therapist-guided session in hand and palm massage — relieving tension and improving circulation.</td></tr>
-      <tr><td>5:30 – 6:15 pm</td><td><strong>The Botanist Story — Herbal Leaves</strong> <span class="tag-inline">daily</span></td><td>Discover local herbal leaves while enjoying a heritage-inspired mocktail at sunset.</td></tr>
-      <tr><td>7:00 pm</td><td><strong>Dinner at Open Kitchen</strong></td><td></td></tr>
-    </tbody></table>
-  </div>
+ <div class="activity-day">
+  <h3 class="activity-day-title">Thursday, June 4</h3>
+  <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
+   <tr><td>8:00 – 8:45 am</td><td><strong>Surya Hatta Yoga</strong> <span class="tag-inline">daily</span></td><td>Standing flow asanas.</td></tr>
+   <tr><td>10:00 – 11:30 am</td><td><strong>Soul Freedom Journey</strong> <span class="tag-inline tag-paid">paid</span></td><td>Tjampuhan Waterfall — sacred rivers, Melukat purification ritual, canang sari offering, traditional Balinese attire. Guided by a Discovery Host and Balinese priest. IDR 2,500,000++ per couple.</td></tr>
+   <tr><td>12:00 – 1:00 pm</td><td><strong>Palm and Press</strong> <span class="tag-inline">daily</span></td><td>A therapist-guided session in hand and palm massage — relieving tension and improving circulation.</td></tr>
+   <tr><td>5:30 – 6:15 pm</td><td><strong>The Botanist Story — Herbal Leaves</strong> <span class="tag-inline">daily</span></td><td>Discover local herbal leaves while enjoying a heritage-inspired mocktail at sunset.</td></tr>
+   <tr><td>7:00 pm</td><td><strong>Dinner at Open Kitchen</strong></td><td></td></tr>
+  </tbody></table>
+ </div>
 
-  <div class="activity-day">
-    <h3 class="activity-day-title">Friday, June 5</h3>
-    <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
-      <tr><td>7:00 – 11:00 am</td><td><strong>Breakfast at Open Kitchen</strong></td><td></td></tr>
-      <tr><td>8:00 – 8:45 am</td><td><strong>Element Pilates</strong> <span class="tag-inline">daily</span></td><td>Mat Pilates at The Pavilion.</td></tr>
-    </tbody></table>
-  </div>
+ <div class="activity-day">
+  <h3 class="activity-day-title">Friday, June 5</h3>
+  <table class="data-table"><thead><tr><th>Time</th><th>Activity</th><th>Description</th></tr></thead><tbody>
+   <tr><td>7:00 – 11:00 am</td><td><strong>Breakfast at Open Kitchen</strong></td><td></td></tr>
+   <tr><td>8:00 – 8:45 am</td><td><strong>Element Pilates</strong> <span class="tag-inline">daily</span></td><td>Mat Pilates at The Pavilion.</td></tr>
+  </tbody></table>
+ </div>
 </section>
 
 <!-- ═══ AREA GUIDE ═══ -->
 <section class="tab-panel" id="tab-area">
-  <div class="section-intro">
-    <h2 class="section-title">Area Guide</h2>
-    <p class="section-desc">Dining, nightlife, wellness, galleries, and activities near Buahan and Ubud</p>
-  </div>
+ <div class="section-intro">
+  <h2 class="section-title">Area Guide</h2>
+  <p class="section-desc">Dining, nightlife, wellness, galleries, and activities near Buahan and Ubud</p>
+ </div>
 
-  <div class="area-category">
-    <h3 class="area-cat-title">Dining</h3>
-    <div class="area-grid">
-      <div class="area-card"><div class="area-name">Locavore NXT <span class="booked-badge">✓ Booked</span></div><div class="area-type">Modern Indonesian · 12-course tasting menu · Lodtunduh</div><div class="area-desc">June 3, 9 guests, 7:00pm. Deposit paid. The finest meal in Bali — foraged ingredients, on-site mushroom farm, food lab.</div><div class="area-links"><a href="https://locavorenxt.com" target="_blank" class="area-link">locavorenxt.com</a> <a href="https://www.instagram.com/locavorenxt/" target="_blank" class="area-link">@locavorenxt</a></div></div>
-      <div class="area-card"><div class="area-name">Tangelo Bali</div><div class="area-type">Global-Balinese fusion · Open-air fine dining · Sebatu</div><div class="area-desc">Recommended for the June 4 farewell dinner. On Mondays, the Spirit of Sebatu Balinese dance takes place during dinner. Confirm booking for 9.</div><div class="area-links"><a href="https://www.instagram.com/tangelobali/" target="_blank" class="area-link">@tangelobali</a></div></div>
-      <div class="area-card"><div class="area-name">Night Rooster</div><div class="area-type">Craft cocktail bar · Italian bites · Jl. Goutama, Ubud</div><div class="area-desc">By the Locavore group. Creative cocktails with local ingredients and Indonesian folklore woven into the experience. Open daily from 4pm.</div><div class="area-links"><a href="https://locavorenxt.com/family/night-rooster" target="_blank" class="area-link">locavorenxt.com/night-rooster</a> <a href="https://www.instagram.com/thenightrooster/" target="_blank" class="area-link">@thenightrooster</a></div></div>
-      <div class="area-card"><div class="area-name">Hujan Locale</div><div class="area-type">Modern Indonesian · Rooftop · Temple views · Jl. Sri Wedari No. 5</div><div class="area-desc">Two-story restaurant — batavia-style café downstairs, chic dining upstairs with temple views. Family-style share plates. Open daily 12pm–10pm.</div><div class="area-links"><a href="https://hujanlocale.com" target="_blank" class="area-link">hujanlocale.com</a> <a href="https://www.instagram.com/hujan_locale/" target="_blank" class="area-link">@hujan_locale</a></div></div>
-      <div class="area-card"><div class="area-name">Mozaic</div><div class="area-type">Award-winning French-Indonesian · Fine dining · Jl. Raya Sanggingan</div><div class="area-desc">Joint #1 fine dining in Indonesia (Savour BlackBookAsia 2025). Seasonal tasting menus combining French technique with Indonesian ingredients. Garden setting.</div><div class="area-links"><a href="https://www.mozaic-bali.com/" target="_blank" class="area-link">mozaic-bali.com</a> <a href="https://www.instagram.com/mozaicrestaurantubud/" target="_blank" class="area-link">@mozaicrestaurantubud</a></div></div>
-      <div class="area-card"><div class="area-name">Room 4 Dessert</div><div class="area-type">Dessert degustation · Award-winning cocktails · Jl. Raya Sanggingan · Closed Mondays</div><div class="area-desc">21-course dessert and cocktail experience by World's 50 Best chef Will Goldfarb. One of the most unique dining experiences in Bali. Open Tue–Sun 4–10pm.</div><div class="area-links"><a href="https://www.room4dessert.com/" target="_blank" class="area-link">room4dessert.com</a> <a href="https://www.instagram.com/r4d_room4dessert/" target="_blank" class="area-link">@r4d_room4dessert</a></div></div>
-      <div class="area-card"><div class="area-name">Aperitif at Viceroy Bali</div><div class="area-type">International/European · Ubud's finest beyond Locavore</div><div class="area-desc">The pinnacle of Ubud fine dining. Worth knowing for independent evening exploration. Lunch and dinner.</div><div class="area-links"><a href="https://www.viceroy.com/bali/dining/aperitif/" target="_blank" class="area-link">viceroy.com/bali</a> <a href="https://www.instagram.com/aperitifrestaurant/" target="_blank" class="area-link">@aperitifrestaurant</a></div></div>
-    </div>
+ <div class="area-category">
+  <h3 class="area-cat-title">Dining</h3>
+  <div class="area-grid">
+   <div class="area-card"><div class="area-name">Locavore NXT <span class="booked-badge">✓ Booked</span></div><div class="area-type">Modern Indonesian · 12-course tasting menu · Lodtunduh</div><div class="area-desc">June 3, 9 guests, 7:00pm. Deposit paid. foraged ingredients, on-site mushroom farm, food lab.</div><div class="area-links"><a href="https://locavorenxt.com" target="_blank" class="area-link">locavorenxt.com</a> <a href="https://www.instagram.com/locavorenxt/" target="_blank" class="area-link">@locavorenxt</a></div></div>
+   <div class="area-card"><div class="area-name">Tangelo Bali</div><div class="area-type">Global-Balinese fusion · Open-air fine dining · Sebatu</div><div class="area-desc">Recommended for the June 4 farewell dinner. On Mondays, the Spirit of Sebatu Balinese dance takes place during dinner. Confirm booking for 9.</div><div class="area-links"><a href="https://www.instagram.com/tangelobali/" target="_blank" class="area-link">@tangelobali</a></div></div>
+   <div class="area-card"><div class="area-name">Night Rooster</div><div class="area-type">Craft cocktail bar · Italian bites · Jl. Goutama, Ubud</div><div class="area-desc">By the Locavore group. Creative cocktails with local ingredients and Indonesian folklore woven into the experience. Open daily from 4pm.</div><div class="area-links"><a href="https://locavorenxt.com/family/night-rooster" target="_blank" class="area-link">locavorenxt.com/night-rooster</a> <a href="https://www.instagram.com/thenightrooster/" target="_blank" class="area-link">@thenightrooster</a></div></div>
+   <div class="area-card"><div class="area-name">Hujan Locale</div><div class="area-type">Modern Indonesian · Rooftop · Temple views · Jl. Sri Wedari No. 5</div><div class="area-desc">Two-story restaurant — batavia-style café downstairs, chic dining upstairs with temple views. Family-style share plates. Open daily 12pm–10pm.</div><div class="area-links"><a href="https://hujanlocale.com" target="_blank" class="area-link">hujanlocale.com</a> <a href="https://www.instagram.com/hujan_locale/" target="_blank" class="area-link">@hujan_locale</a></div></div>
+   <div class="area-card"><div class="area-name">Mozaic</div><div class="area-type">Award-winning French-Indonesian · Fine dining · Jl. Raya Sanggingan</div><div class="area-desc">Joint #1 fine dining in Indonesia (Savour BlackBookAsia 2025). Seasonal tasting menus combining French technique with Indonesian ingredients. Garden setting.</div><div class="area-links"><a href="https://www.mozaic-bali.com/" target="_blank" class="area-link">mozaic-bali.com</a> <a href="https://www.instagram.com/mozaicrestaurantubud/" target="_blank" class="area-link">@mozaicrestaurantubud</a></div></div>
+   <div class="area-card"><div class="area-name">Room 4 Dessert</div><div class="area-type">Dessert degustation · Award-winning cocktails · Jl. Raya Sanggingan · Closed Mondays</div><div class="area-desc">21-course dessert and cocktail experience by World's 50 Best chef Will Goldfarb. One of the most unique dining experiences in Bali. Open Tue–Sun 4–10pm.</div><div class="area-links"><a href="https://www.room4dessert.com/" target="_blank" class="area-link">room4dessert.com</a> <a href="https://www.instagram.com/r4d_room4dessert/" target="_blank" class="area-link">@r4d_room4dessert</a></div></div>
+   <div class="area-card"><div class="area-name">Aperitif at Viceroy Bali</div><div class="area-type">International/European · Ubud's finest beyond Locavore</div><div class="area-desc">The pinnacle of Ubud fine dining. Worth knowing for independent evening exploration. Lunch and dinner.</div><div class="area-links"><a href="https://www.viceroy.com/bali/dining/aperitif/" target="_blank" class="area-link">viceroy.com/bali</a> <a href="https://www.instagram.com/aperitifrestaurant/" target="_blank" class="area-link">@aperitifrestaurant</a></div></div>
   </div>
+ </div>
 
-  <div class="area-category">
-    <h3 class="area-cat-title">Nightlife</h3>
-    <div class="area-grid">
-      <div class="area-card"><div class="area-name">The Blue Door</div><div class="area-type">Speakeasy · Club Lounge · DJ sets · Open until 3–4am</div><div class="area-desc">Beer garden with live bands opens early. Club Lounge opens 9pm. Late-night happy hour 10–11:30pm. Robin loves to dance — being discussed for June 1 and/or June 3.</div><div class="area-links"><a href="https://www.instagram.com/thebluedoorbali/" target="_blank" class="area-link">@thebluedoorbali</a></div></div>
-      <div class="area-card"><div class="area-name">Night Rooster</div><div class="area-type">Craft cocktail bar · Relaxed late-night · Jl. Goutama, Ubud</div><div class="area-desc">The more laid-back option. Creative cocktails with local ingredients and Indonesian folk lore. Perfect for those who prefer a late drink over dancing.</div><div class="area-links"><a href="https://locavorenxt.com/family/night-rooster" target="_blank" class="area-link">locavorenxt.com/night-rooster</a> <a href="https://www.instagram.com/thenightrooster/" target="_blank" class="area-link">@thenightrooster</a></div></div>
-    </div>
+ <div class="area-category">
+  <h3 class="area-cat-title">Nightlife</h3>
+  <div class="area-grid">
+   <div class="area-card"><div class="area-name">The Blue Door</div><div class="area-type">Speakeasy · Club Lounge · DJ sets · Open until 3–4am</div><div class="area-desc">Beer garden with live bands opens early. Club Lounge opens 9pm. Late-night happy hour 10–11:30pm. Robin loves to dance — being discussed for June 1 and/or June 3.</div><div class="area-links"><a href="https://www.instagram.com/thebluedoorbali/" target="_blank" class="area-link">@thebluedoorbali</a></div></div>
+   <div class="area-card"><div class="area-name">Night Rooster</div><div class="area-type">Craft cocktail bar · Relaxed late-night · Jl. Goutama, Ubud</div><div class="area-desc">The more laid-back option. Creative cocktails with local ingredients and Indonesian folklore. Perfect for those who prefer a late drink over dancing.</div><div class="area-links"><a href="https://locavorenxt.com/family/night-rooster" target="_blank" class="area-link">locavorenxt.com/night-rooster</a> <a href="https://www.instagram.com/thenightrooster/" target="_blank" class="area-link">@thenightrooster</a></div></div>
   </div>
+ </div>
 
-  <div class="area-category">
-    <h3 class="area-cat-title">Wellness</h3>
-    <div class="area-grid">
-      <div class="area-card"><div class="area-name">The Yoga Barn</div><div class="area-type">Yoga · Meditation · Sound healing · 7am–9pm</div><div class="area-desc">Ubud's most beloved wellness center. Good for any morning the group wants something off-property.</div><div class="area-links"><a href="https://www.theyogabarn.com" target="_blank" class="area-link">theyogabarn.com</a> <a href="https://www.instagram.com/theyogabarn/" target="_blank" class="area-link">@theyogabarn</a></div></div>
-      <div class="area-card"><div class="area-name">Pyramid of Chi</div><div class="area-type">Sound healing · Moon ceremonies · Breath and voice · 8am–9pm</div><div class="area-desc">Ancient sound healing and moon ceremonies in Tegalalang. Perfectly aligned with Robin's year of intention.</div><div class="area-links"><a href="https://www.instagram.com/pyramidofchi/" target="_blank" class="area-link">@pyramidofchi</a></div></div>
-      <div class="area-card"><div class="area-name">Bali Eling Spirit</div><div class="area-type">Balinese philosophy · Yoga · Meditation · Cleansing rituals · 8am–8pm</div><div class="area-desc">Wellness rooted in Balinese tradition. Closer to the resort — ideal for a morning without a long drive.</div><div class="area-links"><a href="https://www.instagram.com/bali.eling.spirit/" target="_blank" class="area-link">@bali.eling.spirit</a></div></div>
-      <div class="area-card"><div class="area-name">Amrta Siddhi Ayurvedic</div><div class="area-type">Authentic Ayurvedic medicine · Life-changing programs · 8am–6pm</div><div class="area-desc">A natural fit for Allison or anyone drawn to holistic wellness and alternative health.</div><div class="area-links"><a href="https://www.instagram.com/amrtasiddhibali/" target="_blank" class="area-link">@amrtasiddhibali</a></div></div>
-    </div>
+ <div class="area-category">
+  <h3 class="area-cat-title">Wellness</h3>
+  <div class="area-grid">
+   <div class="area-card"><div class="area-name">The Yoga Barn</div><div class="area-type">Yoga · Meditation · Sound healing · 7am–9pm</div><div class="area-desc">Ubud's most beloved wellness center. Good for any morning the group wants something off-property.</div><div class="area-links"><a href="https://www.theyogabarn.com" target="_blank" class="area-link">theyogabarn.com</a> <a href="https://www.instagram.com/theyogabarn/" target="_blank" class="area-link">@theyogabarn</a></div></div>
+   <div class="area-card"><div class="area-name">Pyramid of Chi</div><div class="area-type">Sound healing · Moon ceremonies · Breath and voice · 8am–9pm</div><div class="area-desc">Ancient sound healing and moon ceremonies in Tegalalang. Perfectly aligned with Robin's year of intention.</div><div class="area-links"><a href="https://www.instagram.com/pyramidofchi/" target="_blank" class="area-link">@pyramidofchi</a></div></div>
+   <div class="area-card"><div class="area-name">Bali Eling Spirit</div><div class="area-type">Balinese philosophy · Yoga · Meditation · Cleansing rituals · 8am–8pm</div><div class="area-desc">Wellness rooted in Balinese tradition. Closer to the resort — ideal for a morning without a long drive.</div><div class="area-links"><a href="https://www.instagram.com/bali.eling.spirit/" target="_blank" class="area-link">@bali.eling.spirit</a></div></div>
+   <div class="area-card"><div class="area-name">Amrta Siddhi Ayurvedic</div><div class="area-type">Authentic Ayurvedic medicine · Life-changing programs · 8am–6pm</div><div class="area-desc">A natural fit for Allison or anyone drawn to holistic wellness and alternative health.</div><div class="area-links"><a href="https://www.instagram.com/amrtasiddhibali/" target="_blank" class="area-link">@amrtasiddhibali</a></div></div>
   </div>
+ </div>
 
-  <div class="area-category">
-    <h3 class="area-cat-title">Creative & Cultural Activities</h3>
-    <div class="area-grid">
-      <div class="area-card"><div class="area-name">I Wayan Gama Painting Class</div><div class="area-type">Traditional Keliki-style painting · Keliki, Tegallalang · 9am–7pm</div><div class="area-desc">Preserving a dying Balinese art form. A beautiful afternoon for Robin — directly connects to her creativity intention.</div><div class="area-links"><a href="https://www.instagram.com/iwayangama_painting/" target="_blank" class="area-link">@iwayangama_painting</a></div></div>
-      <div class="area-card"><div class="area-name">Batik Class — Threads of Life</div><div class="area-type">Eco-friendly batik with natural dyes · Kajeng Street, Ubud · 10am–6pm</div><div class="area-desc">Batik-making with plant dyes in a secluded village. Educational, sustainable, and hands-on.</div><div class="area-links"><a href="https://threadsoflife.com" target="_blank" class="area-link">threadsoflife.com</a></div></div>
-      <div class="area-card"><div class="area-name">John Hardy Master Class</div><div class="area-type">Handcrafted silver jewelry · Mambal Street · 10am–6pm</div><div class="area-desc">Design your own wax piece, cast into a silver keepsake. A meaningful Bali souvenir.</div><div class="area-links"><a href="https://johnhardy.com" target="_blank" class="area-link">johnhardy.com</a> <a href="https://www.instagram.com/johnhardy/" target="_blank" class="area-link">@johnhardy</a></div></div>
-      <div class="area-card"><div class="area-name">Ubud Horse Stables</div><div class="area-type">Horse riding through rice fields · Pupuan Village · 8am–5pm</div><div class="area-desc">Ride through lush landscapes and tranquil rice fields. A beautiful and unexpected experience.</div><div class="area-links"><a href="https://www.instagram.com/ubudhorsestables/" target="_blank" class="area-link">@ubudhorsestables</a></div></div>
-    </div>
+ <div class="area-category">
+  <h3 class="area-cat-title">Creative & Cultural Activities</h3>
+  <div class="area-grid">
+   <div class="area-card"><div class="area-name">I Wayan Gama Painting Class</div><div class="area-type">Traditional Keliki-style painting · Keliki, Tegallalang · 9am–7pm</div><div class="area-desc">Preserving a dying Balinese art form. A beautiful afternoon for Robin — directly connects to her creativity intention.</div><div class="area-links"><a href="https://www.instagram.com/iwayangama_painting/" target="_blank" class="area-link">@iwayangama_painting</a></div></div>
+   <div class="area-card"><div class="area-name">Batik Class — Threads of Life</div><div class="area-type">Eco-friendly batik with natural dyes · Kajeng Street, Ubud · 10am–6pm</div><div class="area-desc">Batik-making with plant dyes in a secluded village. Educational, sustainable, and hands-on.</div><div class="area-links"><a href="https://threadsoflife.com" target="_blank" class="area-link">threadsoflife.com</a></div></div>
+   <div class="area-card"><div class="area-name">John Hardy Master Class</div><div class="area-type">Handcrafted silver jewelry · Mambal Street · 10am–6pm</div><div class="area-desc">Design your own wax piece, cast into a silver keepsake. A meaningful Bali souvenir.</div><div class="area-links"><a href="https://johnhardy.com" target="_blank" class="area-link">johnhardy.com</a> <a href="https://www.instagram.com/johnhardy/" target="_blank" class="area-link">@johnhardy</a></div></div>
+   <div class="area-card"><div class="area-name">Ubud Horse Stables</div><div class="area-type">Horse riding through rice fields · Pupuan Village · 8am–5pm</div><div class="area-desc">Ride through lush landscapes and tranquil rice fields. A beautiful and unexpected experience.</div><div class="area-links"><a href="https://www.instagram.com/ubudhorsestables/" target="_blank" class="area-link">@ubudhorsestables</a></div></div>
   </div>
+ </div>
 
-  <div class="area-category">
-    <h3 class="area-cat-title">Galleries</h3>
-    <div class="area-grid">
-      <div class="area-card"><div class="area-name">Neka Art Gallery</div><div class="area-type">Pioneer of Bali fine art · Ubud center · 9am–5pm</div><div class="area-desc">The finest gallery in Ubud. Great for Andy, Julie, and anyone who loves Balinese painting.</div><div class="area-links"><a href="https://www.nekaartmuseum.com" target="_blank" class="area-link">nekaartmuseum.com</a></div></div>
-      <div class="area-card"><div class="area-name">Sika Gallery</div><div class="area-type">Innovative contemporary Balinese artists · 10am–6pm</div><div class="area-desc">Showcase for forward-thinking artists. The most cutting-edge gallery option in Ubud.</div><div class="area-links"><a href="https://www.instagram.com/sikagallery/" target="_blank" class="area-link">@sikagallery</a></div></div>
-      <div class="area-card"><div class="area-name">Kuluk Gallery</div><div class="area-type">Museum-quality textiles, antiques, jewelry, and artifacts · 9am–6pm</div><div class="area-desc">Indonesian antiques from across the archipelago. Perfect for meaningful souvenirs.</div><div class="area-links"><a href="https://www.instagram.com/kulukgallery/" target="_blank" class="area-link">@kulukgallery</a></div></div>
-      <div class="area-card"><div class="area-name">Wayan's Shop</div><div class="area-type">Balinese handicrafts by local artists · 9am–7pm</div><div class="area-desc">Reasonable prices, high quality. Great for gifts and keepsakes.</div></div>
-    </div>
+ <div class="area-category">
+  <h3 class="area-cat-title">Galleries</h3>
+  <div class="area-grid">
+   <div class="area-card"><div class="area-name">Neka Art Gallery</div><div class="area-type">Pioneer of Bali fine art · Ubud center · 9am–5pm</div><div class="area-desc">The finest gallery in Ubud. Great for Andy, Julie, and anyone who loves Balinese painting.</div><div class="area-links"><a href="https://www.nekaartmuseum.com" target="_blank" class="area-link">nekaartmuseum.com</a></div></div>
+   <div class="area-card"><div class="area-name">Sika Gallery</div><div class="area-type">Innovative contemporary Balinese artists · 10am–6pm</div><div class="area-desc">Showcase for forward-thinking artists. The most cutting-edge gallery option in Ubud.</div><div class="area-links"><a href="https://www.instagram.com/sikagallery/" target="_blank" class="area-link">@sikagallery</a></div></div>
+   <div class="area-card"><div class="area-name">Kuluk Gallery</div><div class="area-type">Museum-quality textiles, antiques, jewelry, and artifacts · 9am–6pm</div><div class="area-desc">Indonesian antiques from across the archipelago. Perfect for meaningful souvenirs.</div><div class="area-links"><a href="https://www.instagram.com/kulukgallery/" target="_blank" class="area-link">@kulukgallery</a></div></div>
+   <div class="area-card"><div class="area-name">Wayan's Shop</div><div class="area-type">Balinese handicrafts by local artists · 9am–7pm</div><div class="area-desc">Reasonable prices, high quality. Great for gifts and keepsakes.</div></div>
   </div>
+ </div>
 </section>
 
 <!-- ═══ WINE ═══ -->
 <section class="tab-panel" id="tab-wine">
-  <div class="section-intro">
-    <h2 class="section-title">Wine List</h2>
-    <p class="section-desc">Buahan's curated wine list · All prices in IDR thousands · +21% tax and service</p>
-  </div>
-  <p class="body-text">Spirits and bourbon list coming from Dian — bourbon availability to be confirmed for the June 1 birthday dinner.</p>
+ <div class="section-intro">
+  <h2 class="section-title">Wine List</h2>
+  <p class="section-desc">Buahan's curated wine list · All prices in IDR thousands · +21% tax and service</p>
+ </div>
+ <p class="body-text">Spirits and bourbon list coming from Dian — bourbon availability to be confirmed for the June 1 birthday dinner.</p>
 
-  <div class="wine-section"><h3 class="wine-cat champagne-cat">Champagne</h3>
-  <div class="table-wrap"><table class="data-table"><thead><tr><th>Wine</th><th>Vintage</th><th>Region</th><th>IDR (000s)</th></tr></thead><tbody>
-    <tr><td>Dom Pérignon Brut</td><td>N.V</td><td>Épernay, France</td><td>15,250</td></tr>
-    <tr><td>Louis Roederer Brut</td><td>N.V</td><td>Champagne, France</td><td>5,550</td></tr>
-    <tr><td>Billecart-Salmon Brut Le Réserve</td><td>N.V</td><td>Champagne, France</td><td>4,750</td></tr>
-    <tr><td>Moët & Chandon Brut</td><td>N.V</td><td>Épernay, France</td><td>4,750</td></tr>
-    <tr><td>Duval Leroy Brut Réserva</td><td>N.V</td><td>Reims, France</td><td>3,250</td></tr>
-    <tr><td>Louis Roederer Brut 375ml</td><td>N.V</td><td>Champagne, France</td><td>2,900</td></tr>
-  </tbody></table></div></div>
+ <div class="wine-section"><h3 class="wine-cat champagne-cat">Champagne</h3>
+ <div class="table-wrap"><table class="data-table"><thead><tr><th>Wine</th><th>Vintage</th><th>Region</th><th>IDR (000s)</th></tr></thead><tbody>
+  <tr><td>Dom Pérignon Brut</td><td>N.V</td><td>Épernay, France</td><td>15,250</td></tr>
+  <tr><td>Louis Roederer Brut</td><td>N.V</td><td>Champagne, France</td><td>5,550</td></tr>
+  <tr><td>Billecart-Salmon Brut Le Réserve</td><td>N.V</td><td>Champagne, France</td><td>4,750</td></tr>
+  <tr><td>Moët & Chandon Brut</td><td>N.V</td><td>Épernay, France</td><td>4,750</td></tr>
+  <tr><td>Duval Leroy Brut Réserva</td><td>N.V</td><td>Reims, France</td><td>3,250</td></tr>
+  <tr><td>Louis Roederer Brut 375ml</td><td>N.V</td><td>Champagne, France</td><td>2,900</td></tr>
+ </tbody></table></div></div>
 
-  <div class="wine-section"><h3 class="wine-cat sparkling-cat">Sparkling</h3>
-  <div class="table-wrap"><table class="data-table"><thead><tr><th>Wine</th><th>Vintage</th><th>Region</th><th>IDR (000s)</th></tr></thead><tbody>
-    <tr><td>Louis Perdrier Brut</td><td>N.V</td><td>Burgundy, France</td><td>350/glass · 1,450/btl</td></tr>
-    <tr><td>Two Island Prosecco (Balinese)</td><td>N.V</td><td>Sanur, Bali</td><td>1,150</td></tr>
-    <tr><td>Sababay Ascaro Brut (Balinese)</td><td>N.V</td><td>Saba, Bali</td><td>975</td></tr>
-    <tr><td>Aga Tunjung Sparkling (Balinese)</td><td>N.V</td><td>Sanur, Bali</td><td>850</td></tr>
-  </tbody></table></div></div>
+ <div class="wine-section"><h3 class="wine-cat sparkling-cat">Sparkling</h3>
+ <div class="table-wrap"><table class="data-table"><thead><tr><th>Wine</th><th>Vintage</th><th>Region</th><th>IDR (000s)</th></tr></thead><tbody>
+  <tr><td>Louis Perdrier Brut</td><td>N.V</td><td>Burgundy, France</td><td>350/glass · 1,450/btl</td></tr>
+  <tr><td>Two Island Prosecco (Balinese)</td><td>N.V</td><td>Sanur, Bali</td><td>1,150</td></tr>
+  <tr><td>Sababay Ascaro Brut (Balinese)</td><td>N.V</td><td>Saba, Bali</td><td>975</td></tr>
+  <tr><td>Aga Tunjung Sparkling (Balinese)</td><td>N.V</td><td>Sanur, Bali</td><td>850</td></tr>
+ </tbody></table></div></div>
 
-  <div class="wine-section"><h3 class="wine-cat rosé-cat">Rosé</h3>
-  <div class="table-wrap"><table class="data-table"><thead><tr><th>Wine</th><th>Vintage</th><th>Region</th><th>IDR (000s)</th></tr></thead><tbody>
-    <tr><td>Château d'Esclans Whispering Angel</td><td>'22</td><td>Côtes de Provence, France</td><td>2,600</td></tr>
-    <tr><td>Barton & Guestier Rosé</td><td>'21</td><td>Côtes de Provence, France</td><td>1,700</td></tr>
-    <tr><td>Matua Rosé</td><td>'24</td><td>Marlborough, New Zealand</td><td>1,500</td></tr>
-    <tr><td>Beringer Zinfandel Rosé</td><td>'22</td><td>California, USA</td><td>320/glass · 1,500/btl</td></tr>
-  </tbody></table></div></div>
+ <div class="wine-section"><h3 class="wine-cat rosé-cat">Rosé</h3>
+ <div class="table-wrap"><table class="data-table"><thead><tr><th>Wine</th><th>Vintage</th><th>Region</th><th>IDR (000s)</th></tr></thead><tbody>
+  <tr><td>Château d'Esclans Whispering Angel</td><td>'22</td><td>Côtes de Provence, France</td><td>2,600</td></tr>
+  <tr><td>Barton & Guestier Rosé</td><td>'21</td><td>Côtes de Provence, France</td><td>1,700</td></tr>
+  <tr><td>Matua Rosé</td><td>'24</td><td>Marlborough, New Zealand</td><td>1,500</td></tr>
+  <tr><td>Beringer Zinfandel Rosé</td><td>'22</td><td>California, USA</td><td>320/glass · 1,500/btl</td></tr>
+ </tbody></table></div></div>
 
-  <div class="wine-section"><h3 class="wine-cat white-cat">White</h3>
-  <div class="table-wrap"><table class="data-table"><thead><tr><th>Wine</th><th>Vintage</th><th>Region</th><th>IDR (000s)</th></tr></thead><tbody>
-    <tr><td>Louis Jadot Chassagne Montrachet</td><td>'22</td><td>Burgundy, France</td><td>7,500</td></tr>
-    <tr><td>Penfold Bin 144 Yattarna Chardonnay</td><td>'17</td><td>South Australia</td><td>7,350</td></tr>
-    <tr><td>William Fèvre Grand Cru Valmur Chablis</td><td>'21</td><td>France</td><td>6,750</td></tr>
-    <tr><td>Cloudy Bay Sauvignon Blanc</td><td>'21</td><td>Marlborough, New Zealand</td><td>3,450</td></tr>
-    <tr><td>Terroir al Límit White</td><td>'22</td><td>Priorat, Spain</td><td>3,250</td></tr>
-    <tr><td>Caldora Pinot Grigio (Organic)</td><td>'13</td><td>Abruzzo, Italy</td><td>1,500</td></tr>
-    <tr><td>B&G Chardonnay (Organic)</td><td>N.V</td><td>Languedoc, France</td><td>340/glass · 1,500/btl</td></tr>
-    <tr><td>Matua Sauvignon Blanc (Organic)</td><td>N.V</td><td>Marlborough, New Zealand</td><td>340/glass · 1,500/btl</td></tr>
-    <tr><td>Two Island Sauvignon Blanc (Balinese)</td><td>N.V</td><td>Sanur, Bali</td><td>950</td></tr>
-  </tbody></table></div></div>
+ <div class="wine-section"><h3 class="wine-cat white-cat">White</h3>
+ <div class="table-wrap"><table class="data-table"><thead><tr><th>Wine</th><th>Vintage</th><th>Region</th><th>IDR (000s)</th></tr></thead><tbody>
+  <tr><td>Louis Jadot Chassagne Montrachet</td><td>'22</td><td>Burgundy, France</td><td>7,500</td></tr>
+  <tr><td>Penfold Bin 144 Yattarna Chardonnay</td><td>'17</td><td>South Australia</td><td>7,350</td></tr>
+  <tr><td>William Fèvre Grand Cru Valmur Chablis</td><td>'21</td><td>France</td><td>6,750</td></tr>
+  <tr><td>Cloudy Bay Sauvignon Blanc</td><td>'21</td><td>Marlborough, New Zealand</td><td>3,450</td></tr>
+  <tr><td>Terroir al Límit White</td><td>'22</td><td>Priorat, Spain</td><td>3,250</td></tr>
+  <tr><td>Caldora Pinot Grigio (Organic)</td><td>'13</td><td>Abruzzo, Italy</td><td>1,500</td></tr>
+  <tr><td>B&G Chardonnay (Organic)</td><td>N.V</td><td>Languedoc, France</td><td>340/glass · 1,500/btl</td></tr>
+  <tr><td>Matua Sauvignon Blanc (Organic)</td><td>N.V</td><td>Marlborough, New Zealand</td><td>340/glass · 1,500/btl</td></tr>
+  <tr><td>Two Island Sauvignon Blanc (Balinese)</td><td>N.V</td><td>Sanur, Bali</td><td>950</td></tr>
+ </tbody></table></div></div>
 
-  <div class="wine-section"><h3 class="wine-cat red-cat">Red</h3>
-  <div class="table-wrap"><table class="data-table"><thead><tr><th>Wine</th><th>Vintage</th><th>Region</th><th>IDR (000s)</th></tr></thead><tbody>
-    <tr><td>Gaja Barbaresco DOCG Nebbiolo</td><td>'22</td><td>Piedmont, Italy</td><td>10,150</td></tr>
-    <tr><td>Joseph Drouhin Vosne Romanée Village</td><td>'17</td><td>Côte de Nuits, France</td><td>8,650</td></tr>
-    <tr><td>Penfold St. Henri Shiraz</td><td>'21</td><td>South Australia</td><td>6,800</td></tr>
-    <tr><td>Pio Cesare Barolo DOCG Nebbiolo</td><td>'23</td><td>Piedmont, Italy</td><td>6,250</td></tr>
-    <tr><td>Beringer Knights Valley Cabernet Sauvignon</td><td>'22</td><td>California, USA</td><td>3,000</td></tr>
-    <tr><td>B&G Château Magnol Haut-Médoc Merlot</td><td>'20</td><td>Côtes du Rhône, France</td><td>3,000</td></tr>
-    <tr><td>Lavau Côtes du Rhône Grenache Shiraz</td><td>'21</td><td>Rhône Valley, France</td><td>1,600</td></tr>
-    <tr><td>Black Cottage Pinot Noir</td><td>'21</td><td>Marlborough, New Zealand</td><td>340/glass · 1,500/btl</td></tr>
-    <tr><td>Bodega Norton Reserva Malbec</td><td>'23</td><td>Mendoza, Argentina</td><td>340/glass · 1,500/btl</td></tr>
-    <tr><td>Two Island Shiraz (Balinese)</td><td>N.V</td><td>Sanur, Bali</td><td>950</td></tr>
-    <tr><td>Sababay Reserve Red (Balinese)</td><td>N.V</td><td>Saba, Bali</td><td>900</td></tr>
-  </tbody></table></div></div>
+ <div class="wine-section"><h3 class="wine-cat red-cat">Red</h3>
+ <div class="table-wrap"><table class="data-table"><thead><tr><th>Wine</th><th>Vintage</th><th>Region</th><th>IDR (000s)</th></tr></thead><tbody>
+  <tr><td>Gaja Barbaresco DOCG Nebbiolo</td><td>'22</td><td>Piedmont, Italy</td><td>10,150</td></tr>
+  <tr><td>Joseph Drouhin Vosne Romanée Village</td><td>'17</td><td>Côte de Nuits, France</td><td>8,650</td></tr>
+  <tr><td>Penfold St. Henri Shiraz</td><td>'21</td><td>South Australia</td><td>6,800</td></tr>
+  <tr><td>Pio Cesare Barolo DOCG Nebbiolo</td><td>'23</td><td>Piedmont, Italy</td><td>6,250</td></tr>
+  <tr><td>Beringer Knights Valley Cabernet Sauvignon</td><td>'22</td><td>California, USA</td><td>3,000</td></tr>
+  <tr><td>B&G Château Magnol Haut-Médoc Merlot</td><td>'20</td><td>Côtes du Rhône, France</td><td>3,000</td></tr>
+  <tr><td>Lavau Côtes du Rhône Grenache Shiraz</td><td>'21</td><td>Rhône Valley, France</td><td>1,600</td></tr>
+  <tr><td>Black Cottage Pinot Noir</td><td>'21</td><td>Marlborough, New Zealand</td><td>340/glass · 1,500/btl</td></tr>
+  <tr><td>Bodega Norton Reserva Malbec</td><td>'23</td><td>Mendoza, Argentina</td><td>340/glass · 1,500/btl</td></tr>
+  <tr><td>Two Island Shiraz (Balinese)</td><td>N.V</td><td>Sanur, Bali</td><td>950</td></tr>
+  <tr><td>Sababay Reserve Red (Balinese)</td><td>N.V</td><td>Saba, Bali</td><td>900</td></tr>
+ </tbody></table></div></div>
 
-  <div class="spirits-placeholder"><h3 class="wine-cat">Spirits & Bourbon</h3>
-  <p class="body-text" style="font-style:italic;color:var(--warm);">Buahan's full spirits and bourbon list is coming — awaiting confirmation from Dian. Bourbon availability to be confirmed for the June 1 birthday dinner.</p></div>
+ <div class="spirits-placeholder"><h3 class="wine-cat">Spirits & Bourbon</h3>
+ <p class="body-text" style="font-style:italic;color:var(--warm);">Buahan's full spirits and bourbon list is coming — awaiting confirmation from Dian. Bourbon availability to be confirmed for the June 1 birthday dinner.</p></div>
 </section>
 
 <!-- ═══ PRICING ═══ -->
 <section class="tab-panel" id="tab-pricing">
-  <div class="section-intro">
-    <h2 class="section-title">Pricing</h2>
-    <p class="section-desc">Paid activity rates at Buahan · Check each activity for applicable tax information</p>
-  </div>
-  <div class="table-wrap">
-    <table class="data-table">
-      <thead><tr><th>Activity</th><th>Rate (IDR)</th><th>~USD</th><th>Basis</th><th>Notes</th></tr></thead>
-      <tbody>
-        <tr><td>Moon Yoga</td><td>1,500,000++</td><td>Per person</td><td>+21% tax and service</td></tr>
-        <tr><td>Buahan Bliss Massage</td><td>2,900,000++</td><td>Per person</td><td>2-hour treatment · +21% tax and service</td></tr>
-        <tr><td>Jungle Cooking</td><td>2,200,000++</td><td>Per person</td><td>Includes lunch · +21% tax and service</td></tr>
-        <tr><td>Tri Hita Karana</td><td>4,900,000++</td><td>Per couple</td><td>Half-day journey · +21% tax and service</td></tr>
-        <tr><td>Hike to the Peak</td><td>3,700,000++ / 2,700,000++</td><td>Per couple / single</td><td>Confirmed by Dian · +21% tax and service</td></tr>
-        <tr><td>Locavore NXT — June 3</td><td>2,200,000++</td><td>Per person — food only</td><td>Deposit of IDR 1,500,000 pp already paid by Aaron. Balance due at dinner.</td></tr>
-        <tr><td>Soul Freedom Journey</td><td>2,500,000++</td><td>Per couple</td><td>Aaron's treat · +21% tax and service</td></tr>
-        <tr><td>Lunch at Open Kitchen</td><td>750,000++</td><td>Per person</td><td>Breakfast and dinner included in stay; lunch is not</td></tr>
-        <tr><td>Full-Day HiAce Transfer</td><td>3,500,000++</td><td>Per vehicle (8 hrs max)</td><td>IDR 600,000++ per additional hour</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="body-text" style="margin-top:0.75rem;font-size:0.82rem;color:var(--warm);">++ indicates rates before applicable tax. Tax and service rates vary by activity — confirm with Dian before booking.</p>
-  <p class="body-text" style="font-size:0.78rem;color:var(--warm);" id="usd-note">USD estimates based on ~16,000 IDR per $1 USD · <span id="usd-rate-note">Rate updates dynamically</span></p>
+ <div class="section-intro">
+  <h2 class="section-title">Pricing</h2>
+  <p class="section-desc">Paid activity rates at Buahan · Check each activity for applicable tax information</p>
+ </div>
+ <div class="table-wrap">
+  <table class="data-table">
+   <thead><tr><th>Activity</th><th>Rate (IDR)</th><th>~USD</th><th>Basis</th><th>Notes</th></tr></thead>
+   <tbody>
+    <tr><td>Moon Yoga</td><td>1,500,000++</td><td class="usd-col" data-idr="1500000">~$94</td><td>Per person</td><td>+21% tax and service</td></tr>
+    <tr><td>Buahan Bliss Massage</td><td>2,900,000++</td><td class="usd-col" data-idr="2900000">~$181</td><td>Per person</td><td>2-hour treatment · +21% tax and service</td></tr>
+    <tr><td>Jungle Cooking</td><td>2,200,000++</td><td class="usd-col" data-idr="2200000">~$138</td><td>Per person</td><td>Includes lunch · +21% tax and service</td></tr>
+    <tr><td>Tri Hita Karana</td><td>4,900,000++</td><td class="usd-col" data-idr="4900000">~$306</td><td>Per couple</td><td>Half-day journey · +21% tax and service</td></tr>
+    <tr><td>Hike to the Peak</td><td>3,700,000++ / 2,700,000++</td><td class="usd-col" data-idr="3700000">~$231/$169</td><td>Per couple / single</td><td>Confirmed by Dian · +21% tax and service</td></tr>
+    <tr><td>Locavore NXT — June 3</td><td>2,200,000++</td><td class="usd-col" data-idr="2200000">~$138</td><td>Per person — food only</td><td>Deposit of IDR 1,500,000 per person already paid by Aaron. Balance due at dinner.</td></tr>
+    <tr><td>Soul Freedom Journey</td><td>2,500,000++</td><td class="usd-col" data-idr="2500000">~$156</td><td>Per couple</td><td>Aaron's treat · +21% tax and service</td></tr>
+    <tr><td>Lunch at Open Kitchen</td><td>750,000++</td><td class="usd-col" data-idr="750000">~$47</td><td>Per person</td><td>Breakfast and dinner included in stay; lunch is not</td></tr>
+    <tr><td>Full-Day HiAce Transfer</td><td>3,500,000++</td><td class="usd-col" data-idr="3500000">~$219</td><td>Per vehicle (8 hrs max)</td><td>IDR 600,000++ per additional hour</td></tr>
+   </tbody>
+  </table>
+ </div>
+ <p class="body-text" style="margin-top:0.75rem;font-size:0.82rem;color:var(--warm);">++ indicates rates before applicable tax. Tax and service rates vary by activity — confirm with Dian before booking.</p>
+ <p class="body-text" style="font-size:0.78rem;color:var(--warm);" id="usd-note">USD estimates based on ~16,000 IDR per $1 USD · <span id="usd-rate-note">Rate updates dynamically</span></p>
 
-  <div class="info-section" style="margin-top:2rem;">
-    <h3 class="info-heading">Covered by Aaron — No Charge to Guests</h3>
-    <p class="body-text">The following are Aaron's gift to the group. No pricing is shown here.</p>
-    <div class="info-rows">
-      <div class="info-row"><div class="info-label">Canang Sari ceremony</div><div class="info-detail">May 31 — Balinese priest-led offering workshop and temple walk for all guests.</div></div>
-      <div class="info-row"><div class="info-label">Birthday celebration</div><div class="info-detail">June 1 — Cocktails, canapés, birthday dinner at the Pavilion, wine and champagne.</div></div>
-      <div class="info-row"><div class="info-label">Soul Freedom Journey</div><div class="info-detail">June 4 — Melukat purification ritual at Tjampuhan Waterfall for all guests.</div></div>
-    </div>
+ <div class="info-section" style="margin-top:2rem;">
+  <h3 class="info-heading">Covered by Aaron — No Charge to Guests</h3>
+  <p class="body-text">The following are Aaron's gift to the group.</p>
+  <div class="info-rows">
+   <div class="info-row"><div class="info-label">Canang Sari ceremony</div><div class="info-detail">May 31 — Balinese priest-led offering workshop and temple walk for all guests.</div></div>
+   <div class="info-row"><div class="info-label">Birthday celebration</div><div class="info-detail">June 1 — Cocktails, canapés, birthday dinner at the Pavilion, wine and champagne.</div></div>
+   <div class="info-row"><div class="info-label">Soul Freedom Journey</div><div class="info-detail">June 4 — Melukat purification ritual at Tjampuhan Waterfall for all guests.</div></div>
   </div>
+ </div>
 </section>
 
 <!-- ═══ DECISIONS ═══ -->
 <section class="tab-panel" id="tab-decisions">
-  <div class="section-intro">
-    <h2 class="section-title">Guest Decisions</h2>
-    <p class="section-desc">Activities requiring individual sign-up — Aaron needs your answers</p>
-  </div>
-  <p class="body-text">Please review the activities below and let Aaron know your preferences.</p>
-  <div class="decision-card decision-teal">
-    <h3 class="decision-title">Buahan Bliss Massage — June 1</h3>
-    <p>The Toja Spa signature treatment: torch ginger scrub, stimulating body massage, and detoxifying herbal wrap. Two hours. IDR 2,900,000++ per person. Three treatment rooms — limited slots.</p>
-    <ul><li>Morning 9am–12pm: 2 couple slots</li><li>Afternoon 2pm–5pm: 2 couples + 1 single (Dusty)</li></ul>
-    <p class="decision-ask">Do you want a massage? If yes, morning or afternoon?</p>
-  </div>
-  <div class="decision-card decision-gold">
-    <h3 class="decision-title">Jungle Cooking — June 2</h3>
-    <p>Into Buahan's jungle-edge community farm to forage, harvest, cook over an open flame, and eat what you made. Farm-to-table lunch with live music. 10:00am – ~12:30pm. IDR 2,200,000++ per person.</p>
-    <p class="decision-ask">Are you in for Jungle Cooking?</p>
-  </div>
-  <div class="decision-card decision-coral">
-    <h3 class="decision-title">Hike to the Peak — June 3</h3>
-    <p>Mount Batur sunrise hike guided by Buahan. Departure 2:00am. Summit ~5:00am for sunrise and volcanic steam breakfast. Return by late morning — or later if the group stops at the hot springs and caldera lunch (the group decides after the hike).</p>
-    <p>IDR 3,700,000++ per couple · IDR 2,700,000++ single. Moderate to high cardio fitness recommended.</p>
-    <p class="decision-ask">Are you in for the hike?</p>
-  </div>
+ <div class="section-intro">
+  <h2 class="section-title">Guest Decisions</h2>
+  <p class="section-desc">Activities requiring individual sign-up — Aaron needs your answers</p>
+ </div>
+ <p class="body-text">Please review the activities below and let Aaron know your preferences.</p>
+ <div class="decision-card decision-teal">
+  <h3 class="decision-title">Buahan Bliss Massage — June 1</h3>
+  <p>The Toja Spa signature treatment: torch ginger scrub, stimulating body massage, and detoxifying herbal wrap. Two hours. IDR 2,900,000++ per person. Three treatment rooms — limited slots.</p>
+  <ul><li>Morning 9am–12pm: 2 couple slots</li><li>Afternoon 2pm–5pm: 2 couples + 1 single (Dusty)</li></ul>
+  <p class="decision-ask">Do you want a massage? If yes, morning or afternoon?</p>
+ </div>
+ <div class="decision-card decision-gold">
+  <h3 class="decision-title">Jungle Cooking — June 2</h3>
+  <p>Into Buahan's jungle-edge community farm to forage, harvest, cook over an open flame, and eat what you made. Farm-to-table lunch with live music. 10:00am – ~12:30pm. IDR 2,200,000++ per person.</p>
+  <p class="decision-ask">Are you in for Jungle Cooking?</p>
+ </div>
+ <div class="decision-card decision-coral">
+  <h3 class="decision-title">Hike to the Peak — June 3</h3>
+  <p>Mount Batur sunrise hike guided by Buahan. Departure 2:00am. Summit ~5:00am for sunrise and volcanic steam breakfast. Return by late morning — or later if the group stops at the hot springs and caldera lunch (the group decides after the hike).</p>
+  <p>IDR 3,700,000++ per couple · IDR 2,700,000++ single. Moderate to high cardio fitness recommended.</p>
+  <p class="decision-ask">Are you in for the hike?</p>
+ </div>
 </section>
 
 <!-- ═══ BEFORE YOU GO ═══ -->
 <section class="tab-panel" id="tab-beforeyougo">
-  <div class="section-intro">
-    <h2 class="section-title">Before You Go</h2>
-    <p class="section-desc">Visas, apps, money, phone plans, and packing checklist</p>
-  </div>
+ <div class="section-intro">
+  <h2 class="section-title">Before You Go</h2>
+  <p class="section-desc">Visas, apps, money, phone plans, and packing checklist</p>
+ </div>
 
-  <div class="info-section"><h3 class="info-heading">Visas & Entry</h3><div class="info-rows">
-    <div class="info-row"><div class="info-label">Bali e-VOA — Do this now</div><div class="info-detail">All 9 guests need to apply online before departure — much faster than the on-arrival queue. Cost: $35 USD per person. You'll need a passport photo, return flight details, and Buahan's address: Banjar Selat, Buahan Kaja, Payangan, Gianyar, Bali 80572. You'll receive a QR code — save it to your phone and print a backup. <a href="https://molina.imigrasi.go.id" target="_blank">molina.imigrasi.go.id</a></div></div>
-    <div class="info-row"><div class="info-label">Singapore — no visa</div><div class="info-detail">US passport holders enter visa-free for up to 30 days. No action needed.</div></div>
-    <div class="info-row"><div class="info-label">South Korea (ICN transit)</div><div class="info-detail">US citizens transiting through Incheon do not need a visa for airside transit.</div></div>
-    <div class="info-row"><div class="info-label">Passport validity</div><div class="info-detail">All passports must be valid through at least December 2026. Check everyone's expiry date now.</div></div>
-  </div></div>
+ <div class="info-section"><h3 class="info-heading">Visas & Entry</h3><div class="info-rows">
+  <div class="info-row"><div class="info-label">Bali e-VOA — Do this now</div><div class="info-detail">All 9 guests need to apply online before departure — much faster than the on-arrival queue. Cost: $35 USD per person. You'll need a passport photo, return flight details, and Buahan's address: Banjar Selat, Buahan Kaja, Payangan, Gianyar, Bali 80572. You'll receive a QR code — save it to your phone and print a backup. <a href="https://molina.imigrasi.go.id" target="_blank">molina.imigrasi.go.id</a></div></div>
+  <div class="info-row"><div class="info-label">Singapore — no visa</div><div class="info-detail">US passport holders enter visa-free for up to 30 days. No action needed.</div></div>
+  <div class="info-row"><div class="info-label">South Korea (ICN transit)</div><div class="info-detail">US citizens transiting through Incheon do not need a visa for airside transit.</div></div>
+  <div class="info-row"><div class="info-label">Passport validity</div><div class="info-detail">All passports must be valid through at least December 2026. Check everyone's expiry date now.</div></div>
+ </div></div>
 
-  <div class="info-section"><h3 class="info-heading">Vaccines</h3><div class="info-rows">
-    <div class="info-row"><div class="info-label">CDC recommendations</div><div class="info-detail">Standard recommendations for Bali include Hepatitis A, Typhoid, and current Tetanus. Consult a travel doctor before departure. Allison can advise the group. <a href="https://wwwnc.cdc.gov/travel/destinations/traveler/none/indonesia" target="_blank">CDC Indonesia travel page</a></div></div>
-    <div class="info-row"><div class="info-label">Travel pharmacy</div><div class="info-detail">For local vaccine options: <a href="https://kohllsrx.com/vaccines/travel" target="_blank">kohllsrx.com/vaccines/travel</a></div></div>
-  </div></div>
+ <div class="info-section"><h3 class="info-heading">Vaccines</h3><div class="info-rows">
+  <div class="info-row"><div class="info-label">CDC recommendations</div><div class="info-detail">Standard recommendations for Bali include Hepatitis A, Typhoid, and current Tetanus. Consult a travel doctor before departure. Allison can advise the group. <a href="https://wwwnc.cdc.gov/travel/destinations/traveler/none/indonesia" target="_blank">CDC Indonesia travel page</a></div></div>
+  <div class="info-row"><div class="info-label">Travel pharmacy</div><div class="info-detail">For local vaccine options: <a href="https://kohllsrx.com/vaccines/travel" target="_blank">kohllsrx.com/vaccines/travel</a></div></div>
+ </div></div>
 
-  <div class="info-section"><h3 class="info-heading">Apps to Download</h3><div class="info-rows">
-    <div class="info-row"><div class="info-label">Grab</div><div class="info-detail">The Uber of Southeast Asia — works in Singapore and Bali. Set up your account and add a payment method now. You'll need it for returns from Locavore, The Blue Door, and Ubud venues. <a href="https://grab.com" target="_blank">grab.com</a></div></div>
-    <div class="info-row"><div class="info-label">Google Maps</div><div class="info-detail">Download offline maps for Bali (Gianyar region) and Singapore before you leave. Works without data.</div></div>
-    <div class="info-row"><div class="info-label">WhatsApp</div><div class="info-detail">Most Bali vendors, drivers, and Dian communicate via WhatsApp. Essential.</div></div>
-    <div class="info-row"><div class="info-label">XE Currency</div><div class="info-detail">Quick IDR/USD converter for markets and tipping. Current rate: ~16,000 IDR per $1 USD.</div></div>
-    <div class="info-row"><div class="info-label">Google Translate</div><div class="info-detail">Download the Indonesian language pack for offline use.</div></div>
-  </div></div>
+ <div class="info-section"><h3 class="info-heading">Apps to Download</h3><div class="info-rows">
+  <div class="info-row"><div class="info-label">Grab</div><div class="info-detail">The Uber of Southeast Asia — works in Singapore and Bali. Set up your account and add a payment method now. You'll need it for returns from Locavore, The Blue Door, and Ubud venues. <a href="https://grab.com" target="_blank">grab.com</a></div></div>
+  <div class="info-row"><div class="info-label">Google Maps</div><div class="info-detail">Download offline maps for Bali (Gianyar region) and Singapore before you leave. Works without data.</div></div>
+  <div class="info-row"><div class="info-label">WhatsApp</div><div class="info-detail">Most Bali vendors, drivers, and Dian communicate via WhatsApp. Essential.</div></div>
+  <div class="info-row"><div class="info-label">XE Currency</div><div class="info-detail">Quick IDR/USD converter for markets and tipping. Current rate: ~16,000 IDR per $1 USD.</div></div>
+  <div class="info-row"><div class="info-label">Google Translate</div><div class="info-detail">Download the Indonesian language pack for offline use.</div></div>
+ </div></div>
 
-  <div class="info-section"><h3 class="info-heading">Money</h3><div class="info-rows">
-    <div class="info-row"><div class="info-label">Bali currency — IDR</div><div class="info-detail">Indonesian Rupiah. ~16,000 IDR = $1 USD. IDR 100,000 ≈ $6. IDR 1,000,000 ≈ $62. Resort prices are in the millions — don't be alarmed.</div></div>
-    <div class="info-row"><div class="info-label">ATM at DPS</div><div class="info-detail">Withdraw IDR from ATMs at the airport on arrival. Good rates and convenient. Notify your bank before traveling.</div></div>
-    <div class="info-row"><div class="info-label">Cash for the week</div><div class="info-detail">Budget IDR 2,000,000–3,000,000 per person (~$125–190) for tips, markets, Grab rides, and incidentals.</div></div>
-    <div class="info-row"><div class="info-label">Tipping</div><div class="info-detail">Not mandatory but always appreciated. IDR 20,000–50,000 ($1–3) for drivers and service staff. The resort's service charge covers tipping there.</div></div>
-    <div class="info-row"><div class="info-label">Singapore — SGD</div><div class="info-detail">Cards are accepted almost everywhere. Having $50–100 SGD is useful for hawker centers.</div></div>
-    <div class="info-row"><div class="info-label">Notify credit cards</div><div class="info-detail">Let all banks know: Singapore, Indonesia, and South Korea. May 26 – June 12.</div></div>
-  </div></div>
+ <div class="info-section"><h3 class="info-heading">Money</h3><div class="info-rows">
+  <div class="info-row"><div class="info-label">Bali currency — IDR</div><div class="info-detail">Indonesian Rupiah. ~16,000 IDR = $1 USD. IDR 100,000 ≈ $6. IDR 1,000,000 ≈ $62. Resort prices are in the millions — don't be alarmed.</div></div>
+  <div class="info-row"><div class="info-label">ATM at DPS</div><div class="info-detail">Withdraw IDR from ATMs at the airport on arrival. Good rates and convenient. Notify your bank before traveling.</div></div>
+  <div class="info-row"><div class="info-label">Cash for the week</div><div class="info-detail">Budget IDR 2,000,000–3,000,000 per person (~$125–190) for tips, markets, Grab rides, and incidentals.</div></div>
+  <div class="info-row"><div class="info-label">Tipping</div><div class="info-detail">Not mandatory but always appreciated. IDR 20,000–50,000 ($1–3) for drivers and service staff. The resort's service charge covers tipping there.</div></div>
+  <div class="info-row"><div class="info-label">Singapore — SGD</div><div class="info-detail">Cards are accepted almost everywhere. Having $50–100 SGD is useful for hawker centers.</div></div>
+  <div class="info-row"><div class="info-label">Notify credit cards</div><div class="info-detail">Let all banks know: Singapore, Indonesia, and South Korea. May 26 – June 12.</div></div>
+ </div></div>
 
-  <div class="info-section"><h3 class="info-heading">Phone & Data</h3><div class="info-rows">
-    <div class="info-row"><div class="info-label">Check your carrier first</div><div class="info-detail">T-Mobile Magenta includes free international data in 215+ countries. Verizon and AT&T offer $10/day international passes. Check your plan — you may already be covered.</div></div>
-    <div class="info-row"><div class="info-label">Airalo eSIM — if not covered</div><div class="info-detail">Buy a Singapore + Indonesia eSIM before you leave. Keeps your US number. ~$10–15 for 10 days. Works on iPhone XS and newer. <a href="https://airalo.com" target="_blank">airalo.com</a></div></div>
-    <div class="info-row"><div class="info-label">Buahan WiFi</div><div class="info-detail">The resort has WiFi, but it's a jungle property — don't count on strong signal everywhere. Download everything you need before arriving.</div></div>
-  </div></div>
+ <div class="info-section"><h3 class="info-heading">Phone & Data</h3><div class="info-rows">
+  <div class="info-row"><div class="info-label">Check your carrier first</div><div class="info-detail">T-Mobile Magenta includes free international data in 215+ countries. Verizon and AT&T offer $10/day international passes. Check your plan — you may already be covered.</div></div>
+  <div class="info-row"><div class="info-label">Airalo eSIM — if not covered</div><div class="info-detail">Buy a Singapore + Indonesia eSIM before you leave. Keeps your US number. ~$10–15 for 10 days. Works on iPhone XS and newer. <a href="https://airalo.com" target="_blank">airalo.com</a></div></div>
+  <div class="info-row"><div class="info-label">Buahan WiFi</div><div class="info-detail">The resort has WiFi, but it's a jungle property — don't count on strong signal everywhere. Download everything you need before arriving.</div></div>
+ </div></div>
 
-  <div class="info-section"><h3 class="info-heading">Packing — Buahan Specific</h3><div class="info-rows">
-    <div class="info-row"><div class="info-label">Shoes</div><div class="info-detail">Outdoor shoes with grip — the property is on sloping rainforest terrain. Also sandals for the pool and casual use.</div></div>
-    <div class="info-row"><div class="info-label">Clothing</div><div class="info-detail">Lightweight activewear. A jacket or shawl for evenings (22°C/72°F). Smart-casual for the birthday dinner and Locavore. No high heels.</div></div>
-    <div class="info-row"><div class="info-label">Temple attire</div><div class="info-detail">Shoulders and knees covered when visiting temples. Sarongs available on-site — bring a light shawl as backup.</div></div>
-    <div class="info-row"><div class="info-label">Provided at each Bale</div><div class="info-detail">Adventure bag, torchlight, night lantern, rain ponchos, binoculars (on request), SPF 30 sunscreen, and mosquito repellent. No need to pack these.</div></div>
-    <div class="info-row"><div class="info-label">School visit — June 4</div><div class="info-detail">Bring storybooks and teaching supplies for SDN 2 Buahan elementary school. Karen is coordinating — check with her.</div></div>
-    <div class="info-row"><div class="info-label">Gifts for hosts</div><div class="info-detail">Small gifts for local families at the cooking class or school visit are always meaningful. Avoid single-use plastic.</div></div>
-  </div></div>
+ <div class="info-section"><h3 class="info-heading">Packing — Buahan Specific</h3><div class="info-rows">
+  <div class="info-row"><div class="info-label">Shoes</div><div class="info-detail">Outdoor shoes with grip — the property is on sloping rainforest terrain. Also sandals for the pool and casual use.</div></div>
+  <div class="info-row"><div class="info-label">Clothing</div><div class="info-detail">Lightweight activewear. A jacket or shawl for evenings (22°C/72°F). Smart-casual for the birthday dinner and Locavore. No high heels.</div></div>
+  <div class="info-row"><div class="info-label">Temple attire</div><div class="info-detail">Shoulders and knees covered when visiting temples. Sarongs available on-site — bring a light shawl as backup.</div></div>
+  <div class="info-row"><div class="info-label">Provided at each Bale</div><div class="info-detail">Adventure bag, torchlight, night lantern, rain ponchos, binoculars (on request), SPF 30 sunscreen, and mosquito repellent. No need to pack these.</div></div>
+  <div class="info-row"><div class="info-label">School visit — June 4</div><div class="info-detail">Bring storybooks and teaching supplies for SDN 2 Buahan elementary school. Karen is coordinating — check with her.</div></div>
+  <div class="info-row"><div class="info-label">Gifts for hosts</div><div class="info-detail">Small gifts for local families at the cooking class or school visit are always meaningful. Avoid single-use plastic.</div></div>
+ </div></div>
 
-  <div class="info-section"><h3 class="info-heading">Health</h3><div class="info-rows">
-    <div class="info-row"><div class="info-label">Vaccines</div><div class="info-detail">Hepatitis A, Typhoid, current Tetanus recommended. See <a href="https://wwwnc.cdc.gov/travel/destinations/traveler/none/indonesia" target="_blank">CDC Indonesia page</a> or <a href="https://kohllsrx.com/vaccines/travel" target="_blank">kohllsrx.com/vaccines/travel</a>. Allison can advise the group.</div></div>
-    <div class="info-row"><div class="info-label">Medications</div><div class="info-detail">Bring all prescriptions in original packaging with extra supply for the full trip.</div></div>
-    <div class="info-row"><div class="info-label">Travel insurance</div><div class="info-detail">Strongly recommended — medical evacuation coverage especially, given the volcano hike and remote resort location.</div></div>
-    <div class="info-row"><div class="info-label">Water</div><div class="info-detail">Do not drink tap water. The resort provides filtered water. Buy bottled water when out.</div></div>
-  </div></div>
+ <div class="info-section"><h3 class="info-heading">Health</h3><div class="info-rows">
+  <div class="info-row"><div class="info-label">Vaccines</div><div class="info-detail">Hepatitis A, Typhoid, current Tetanus recommended. See <a href="https://wwwnc.cdc.gov/travel/destinations/traveler/none/indonesia" target="_blank">CDC Indonesia page</a> or <a href="https://kohllsrx.com/vaccines/travel" target="_blank">kohllsrx.com/vaccines/travel</a>. Allison can advise the group.</div></div>
+  <div class="info-row"><div class="info-label">Medications</div><div class="info-detail">Bring all prescriptions in original packaging with extra supply for the full trip.</div></div>
+  <div class="info-row"><div class="info-label">Travel insurance</div><div class="info-detail">Strongly recommended — medical evacuation coverage especially, given the volcano hike and remote resort location.</div></div>
+  <div class="info-row"><div class="info-label">Water</div><div class="info-detail">Do not drink tap water. The resort provides filtered water. Buy bottled water when out.</div></div>
+ </div></div>
 </section>
 
 <!-- ═══ CULTURE ═══ -->
 <section class="tab-panel" id="tab-culture">
-  <div class="section-intro">
-    <h2 class="section-title">Culture & Language</h2>
-    <p class="section-desc">Customs, etiquette, common phrases, and pronunciation guide</p>
+ <div class="section-intro">
+  <h2 class="section-title">Culture & Language</h2>
+  <p class="section-desc">Customs, etiquette, common phrases, and pronunciation guide</p>
+ </div>
+
+ <div class="info-section"><h3 class="info-heading">Customs & Etiquette</h3><div class="info-rows">
+  <div class="info-row"><div class="info-label">The right hand</div><div class="info-detail">Use your right hand for giving, receiving, eating, and gesturing. The left hand is considered unclean in Balinese and Indonesian culture.</div></div>
+  <div class="info-row"><div class="info-label">Remove your shoes</div><div class="info-detail">Remove shoes before entering homes, temples, and some restaurants. A shoe rack at the entrance is your cue.</div></div>
+  <div class="info-row"><div class="info-label">Dress modestly at temples</div><div class="info-detail">Shoulders and knees must be covered. Sarongs and sashes are available at most temples — wearing them, even over shorts, is a sign of respect.</div></div>
+  <div class="info-row"><div class="info-label">Offerings on the ground</div><div class="info-detail">You'll see small canang sari offerings everywhere — on the ground, on steps, in doorways. Step around them, never over them. They are sacred.</div></div>
+  <div class="info-row"><div class="info-label">Pointing</div><div class="info-detail">Pointing with your index finger is considered rude. Use your thumb or whole hand to gesture instead.</div></div>
+  <div class="info-row"><div class="info-label">The head is sacred</div><div class="info-detail">Never touch someone's head — even a child's. It is considered the most sacred part of the body.</div></div>
+  <div class="info-row"><div class="info-label">Smile and patience</div><div class="info-detail">Balinese culture is warm, gentle, and unhurried. A smile goes a long way. Don't rush or raise your voice.</div></div>
+  <div class="info-row"><div class="info-label">Bring something</div><div class="info-detail">When visiting homes or communities, a small gift — fruit, sweets, or school supplies — is always appreciated.</div></div>
+  <div class="info-row"><div class="info-label">Photography</div><div class="info-detail">Always ask before photographing people or ceremonies. Many sacred rituals are not meant to be photographed. Read the room.</div></div>
+  <div class="info-row"><div class="info-label">Bargaining</div><div class="info-detail">Gentle bargaining is acceptable at markets. Start at about 50–60% of the asking price. Always smile and keep it light.</div></div>
+ </div></div>
+
+ <div class="info-section">
+  <h3 class="info-heading">Common Phrases — Bahasa Indonesia</h3>
+  <p class="body-text">Balinese (Bahasa Bali) is the local language, but Indonesian (Bahasa Indonesia) is understood everywhere. Even a few words are deeply appreciated. Click 🔊 to hear the pronunciation.</p>
+  <div class="table-wrap">
+   <table class="data-table phrase-table">
+    <thead><tr><th>Phrase</th><th>Pronunciation</th><th>Meaning</th><th>Note</th><th></th></tr></thead>
+    <tbody>
+     <tr><td class="phrase-word">Terima kasih</td><td class="phrase-pron">teh-REE-mah KAH-see</td><td>Thank you</td><td>The most important phrase. Use it often.</td><td><button class="speak-btn" data-text="Terima kasih" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Sama-sama</td><td class="phrase-pron">SAH-mah SAH-mah</td><td>You're welcome</td><td>Standard reply to terima kasih.</td><td><button class="speak-btn" data-text="Sama-sama" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Selamat pagi</td><td class="phrase-pron">seh-LAH-maht PAH-ghee</td><td>Good morning</td><td>Said until about 11:00am.</td><td><button class="speak-btn" data-text="Selamat pagi" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Selamat siang</td><td class="phrase-pron">seh-LAH-maht see-AHNG</td><td>Good afternoon</td><td>Said from about 11:00am to 3pm.</td><td><button class="speak-btn" data-text="Selamat siang" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Selamat malam</td><td class="phrase-pron">seh-LAH-maht MAH-lahm</td><td>Good evening/night</td><td>Used from late afternoon onward.</td><td><button class="speak-btn" data-text="Selamat malam" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Apa kabar?</td><td class="phrase-pron">AH-pah KAH-bar</td><td>How are you?</td><td>Reply: 'Baik, terima kasih'</td><td><button class="speak-btn" data-text="Apa kabar?" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Baik</td><td class="phrase-pron">BYE-k</td><td>Good / Fine</td><td>Useful in many contexts.</td><td><button class="speak-btn" data-text="Baik" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Tolong</td><td class="phrase-pron">TOH-long</td><td>Please / Help</td><td>Used to make requests politely.</td><td><button class="speak-btn" data-text="Tolong" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Maaf</td><td class="phrase-pron">MAH-ahf</td><td>Sorry / Excuse me</td><td>Gentle and used often.</td><td><button class="speak-btn" data-text="Maaf" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Berapa?</td><td class="phrase-pron">beh-RAH-pah</td><td>How much?</td><td>Essential at markets.</td><td><button class="speak-btn" data-text="Berapa?" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Terlalu mahal</td><td class="phrase-pron">ter-LAH-loo mah-HAHL</td><td>Too expensive</td><td>For gentle market bargaining.</td><td><button class="speak-btn" data-text="Terlalu mahal" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Enak!</td><td class="phrase-pron">EH-nahk</td><td>Delicious!</td><td>Say this after every meal — faces will light up.</td><td><button class="speak-btn" data-text="Enak!" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Tidak apa-apa</td><td class="phrase-pron">tee-DAHK AH-pah AH-pah</td><td>No problem</td><td>Reassuring and frequently useful.</td><td><button class="speak-btn" data-text="Tidak apa-apa" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Di mana…?</td><td class="phrase-pron">dee MAH-nah</td><td>Where is…?</td><td>Di mana toilet?</td><td><button class="speak-btn" data-text="Di mana?" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Om Swastyastu</td><td class="phrase-pron">om swas-tee-AH-stoo</td><td>Balinese greeting</td><td>Sacred. Use it with sincerity.</td><td><button class="speak-btn" data-text="Om Swastyastu" data-lang="id-ID">🔊</button></td></tr>
+     <tr><td class="phrase-word">Matur suksma</td><td class="phrase-pron">mah-TOOR SOOK-smah</td><td>Thank you (Balinese)</td><td>Extra points for using this one.</td><td><button class="speak-btn" data-text="Matur suksma" data-lang="id-ID">🔊</button></td></tr>
+    </tbody>
+   </table>
   </div>
+  <p class="body-text" style="font-size:0.78rem;color:var(--warm);margin-top:0.5rem;">🔊 Pronunciation uses your device's built-in text-to-speech. Indonesian pronunciation is closest to what you'll hear in Bali.</p>
+ </div>
 
-  <div class="info-section"><h3 class="info-heading">Customs & Etiquette</h3><div class="info-rows">
-    <div class="info-row"><div class="info-label">The right hand</div><div class="info-detail">Use your right hand for giving, receiving, eating, and gesturing. The left hand is considered unclean in Balinese and Indonesian culture.</div></div>
-    <div class="info-row"><div class="info-label">Remove your shoes</div><div class="info-detail">Remove shoes before entering homes, temples, and some restaurants. A shoe rack at the entrance is your cue.</div></div>
-    <div class="info-row"><div class="info-label">Dress modestly at temples</div><div class="info-detail">Shoulders and knees must be covered. Sarongs and sashes are available at most temples — wearing them, even over shorts, is a sign of respect.</div></div>
-    <div class="info-row"><div class="info-label">Offerings on the ground</div><div class="info-detail">You'll see small canang sari offerings everywhere — on the ground, on steps, in doorways. Step around them, never over them. They are sacred.</div></div>
-    <div class="info-row"><div class="info-label">Pointing</div><div class="info-detail">Pointing with your index finger is considered rude. Use your thumb or whole hand to gesture instead.</div></div>
-    <div class="info-row"><div class="info-label">The head is sacred</div><div class="info-detail">Never touch someone's head — even a child's. It is considered the most sacred part of the body.</div></div>
-    <div class="info-row"><div class="info-label">Smile and patience</div><div class="info-detail">Balinese culture is warm, gentle, and unhurried. A smile goes a long way. Don't rush or raise your voice.</div></div>
-    <div class="info-row"><div class="info-label">Bring something</div><div class="info-detail">When visiting homes or communities, a small gift — fruit, sweets, or school supplies — is always appreciated.</div></div>
-    <div class="info-row"><div class="info-label">Photography</div><div class="info-detail">Always ask before photographing people or ceremonies. Many sacred rituals are not meant to be photographed. Read the room.</div></div>
-    <div class="info-row"><div class="info-label">Bargaining</div><div class="info-detail">Gentle bargaining is acceptable at markets. Start at about 50–60% of the asking price. Always smile and keep it light.</div></div>
-  </div></div>
-
-  <div class="info-section">
-    <h3 class="info-heading">Common Phrases — Bahasa Indonesia</h3>
-    <p class="body-text">Balinese (Bahasa Bali) is the local language, but Indonesian (Bahasa Indonesia) is understood everywhere. Even a few words are deeply appreciated. Click 🔊 to hear the pronunciation.</p>
-    <div class="table-wrap">
-      <table class="data-table phrase-table">
-        <thead><tr><th>Phrase</th><th>Pronunciation</th><th>Meaning</th><th>Note</th><th></th></tr></thead>
-        <tbody>
-          <tr><td class="phrase-word">Terima kasih</td><td class="phrase-pron">teh-REE-mah KAH-see</td><td>Thank you</td><td>The most important phrase. Use it often.</td><td><button class="speak-btn" data-text="Terima kasih" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Sama-sama</td><td class="phrase-pron">SAH-mah SAH-mah</td><td>You're welcome</td><td>Standard reply to terima kasih.</td><td><button class="speak-btn" data-text="Sama-sama" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Selamat pagi</td><td class="phrase-pron">seh-LAH-maht PAH-ghee</td><td>Good morning</td><td>Said until about 11am.</td><td><button class="speak-btn" data-text="Selamat pagi" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Selamat siang</td><td class="phrase-pron">seh-LAH-maht see-AHNG</td><td>Good afternoon</td><td>Said from about 11am to 3pm.</td><td><button class="speak-btn" data-text="Selamat siang" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Selamat malam</td><td class="phrase-pron">seh-LAH-maht MAH-lahm</td><td>Good evening/night</td><td>Used from late afternoon onward.</td><td><button class="speak-btn" data-text="Selamat malam" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Apa kabar?</td><td class="phrase-pron">AH-pah KAH-bar</td><td>How are you?</td><td>Reply: 'Baik, terima kasih'</td><td><button class="speak-btn" data-text="Apa kabar?" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Baik</td><td class="phrase-pron">BYE-k</td><td>Good / Fine</td><td>Useful in many contexts.</td><td><button class="speak-btn" data-text="Baik" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Tolong</td><td class="phrase-pron">TOH-long</td><td>Please / Help</td><td>Used to make requests politely.</td><td><button class="speak-btn" data-text="Tolong" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Maaf</td><td class="phrase-pron">MAH-ahf</td><td>Sorry / Excuse me</td><td>Gentle and used often.</td><td><button class="speak-btn" data-text="Maaf" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Berapa?</td><td class="phrase-pron">beh-RAH-pah</td><td>How much?</td><td>Essential at markets.</td><td><button class="speak-btn" data-text="Berapa?" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Terlalu mahal</td><td class="phrase-pron">ter-LAH-loo mah-HAHL</td><td>Too expensive</td><td>For gentle market bargaining.</td><td><button class="speak-btn" data-text="Terlalu mahal" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Enak!</td><td class="phrase-pron">EH-nahk</td><td>Delicious!</td><td>Say this after every meal — faces will light up.</td><td><button class="speak-btn" data-text="Enak!" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Tidak apa-apa</td><td class="phrase-pron">tee-DAHK AH-pah AH-pah</td><td>No problem</td><td>Reassuring and frequently useful.</td><td><button class="speak-btn" data-text="Tidak apa-apa" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Di mana...?</td><td class="phrase-pron">dee MAH-nah</td><td>Where is...?</td><td>Di mana toilet?</td><td><button class="speak-btn" data-text="Di mana?" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Om Swastyastu</td><td class="phrase-pron">om swas-tee-AH-stoo</td><td>Balinese greeting</td><td>Sacred. Use it with sincerity.</td><td><button class="speak-btn" data-text="Om Swastyastu" data-lang="id-ID">🔊</button></td></tr>
-          <tr><td class="phrase-word">Matur suksma</td><td class="phrase-pron">mah-TOOR SOOK-smah</td><td>Thank you (Balinese)</td><td>Extra points for using this one.</td><td><button class="speak-btn" data-text="Matur suksma" data-lang="id-ID">🔊</button></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="body-text" style="font-size:0.78rem;color:var(--warm);margin-top:0.5rem;">🔊 Pronunciation uses your device's built-in text-to-speech. Indonesian pronunciation is closest to what you'll hear in Bali.</p>
-  </div>
-
-  <div class="info-section"><h3 class="info-heading">Quick Pronunciation Guide</h3><div class="info-rows">
-    <div class="info-row"><div class="info-label">'c' is always 'ch'</div><div class="info-detail">Canggu = CHAHNG-goo · Canang = chah-NAHNG</div></div>
-    <div class="info-row"><div class="info-label">'j' like English 'j'</div><div class="info-detail">Jalan (road) = JAH-lahn</div></div>
-    <div class="info-row"><div class="info-label">Vowels are pure</div><div class="info-detail">a = 'ah' · e = 'eh' · i = 'ee' · o = 'oh' · u = 'oo'</div></div>
-    <div class="info-row"><div class="info-label">Stress: penultimate</div><div class="info-detail">Ubud = OO-bood · Bali = BAH-lee · Gamelan = gah-meh-LAHN</div></div>
-  </div></div>
+ <div class="info-section"><h3 class="info-heading">Quick Pronunciation Guide</h3><div class="info-rows">
+  <div class="info-row"><div class="info-label">'c' is always 'ch'</div><div class="info-detail">Canggu = CHAHNG-goo · Canang = chah-NAHNG</div></div>
+  <div class="info-row"><div class="info-label">'j' like English 'j'</div><div class="info-detail">Jalan (road) = JAH-lahn</div></div>
+  <div class="info-row"><div class="info-label">Vowels are pure</div><div class="info-detail">a = 'ah' · e = 'eh' · i = 'ee' · o = 'oh' · u = 'oo'</div></div>
+  <div class="info-row"><div class="info-label">Stress: penultimate</div><div class="info-detail">Ubud = OO-bood · Bali = BAH-lee · Gamelan = gah-meh-LAHN</div></div>
+ </div></div>
 </section>
 
 <!-- ═══ WEATHER ═══ -->
 <section class="tab-panel" id="tab-weather">
-  <div class="section-intro">
-    <h2 class="section-title">Weather</h2>
-    <p class="section-desc">Payangan highlands, Bali · Updating in real time via Open-Meteo</p>
+ <div class="section-intro">
+  <h2 class="section-title">Weather</h2>
+  <p class="section-desc">Payangan highlands, Bali · Updating in real time via Open-Meteo</p>
+ </div>
+
+ <div id="weather-loading" class="weather-loading">Loading current forecast for Ubud/Payangan…</div>
+ <div id="weather-error" class="weather-error" style="display:none;">Unable to load live forecast. Please check your connection.</div>
+
+ <div id="weather-live" style="display:none;">
+  <div class="weather-current-card">
+   <div class="wc-location">Payangan, Bali (Buahan area)</div>
+   <div class="wc-main">
+    <div class="wc-temp" id="wc-temp">—</div>
+    <div class="wc-desc" id="wc-desc">—</div>
+   </div>
+   <div class="wc-stats">
+    <div class="wc-stat"><span class="wc-stat-label">Humidity</span><span id="wc-humidity">—</span></div>
+    <div class="wc-stat"><span class="wc-stat-label">Wind</span><span id="wc-wind">—</span></div>
+    <div class="wc-stat"><span class="wc-stat-label">Feels like</span><span id="wc-feels">—</span></div>
+   </div>
   </div>
 
-  <div id="weather-loading" class="weather-loading">Loading current forecast for Ubud/Payangan...</div>
-  <div id="weather-error" class="weather-error" style="display:none;">Unable to load live forecast. Please check your connection.</div>
+  <h3 class="info-heading" style="margin-top:1.5rem;">7-Day Forecast</h3>
+  <div id="weather-forecast" class="weather-forecast-grid"></div>
+ </div>
 
-  <div id="weather-live" style="display:none;">
-    <div class="weather-current-card">
-      <div class="wc-location">Payangan, Bali (Buahan area)</div>
-      <div class="wc-main">
-        <div class="wc-temp" id="wc-temp">—</div>
-        <div class="wc-desc" id="wc-desc">—</div>
-      </div>
-      <div class="wc-stats">
-        <div class="wc-stat"><span class="wc-stat-label">Humidity</span><span id="wc-humidity">—</span></div>
-        <div class="wc-stat"><span class="wc-stat-label">Wind</span><span id="wc-wind">—</span></div>
-        <div class="wc-stat"><span class="wc-stat-label">Feels like</span><span id="wc-feels">—</span></div>
-      </div>
-    </div>
-
-    <h3 class="info-heading" style="margin-top:1.5rem;">7-Day Forecast</h3>
-    <div id="weather-forecast" class="weather-forecast-grid"></div>
+ <div class="info-section" style="margin-top:2rem;">
+  <h3 class="info-heading">What to Expect in June</h3>
+  <div class="info-rows">
+   <div class="info-row"><div class="info-label">Season</div><div class="info-detail">June is solidly in Bali's dry season — one of the best months to visit. The wet season runs November to March, so you're well into comfortable conditions.</div></div>
+   <div class="info-row"><div class="info-label">Sunshine</div><div class="info-detail">Approximately 9 hours of bright sunshine per day. Mornings tend to be clearest; afternoons can bring some cloud buildup.</div></div>
+   <div class="info-row"><div class="info-label">Rainfall</div><div class="info-detail">Only about 5–6 rainy days in June. When it rains, it's typically a brief tropical shower — not an all-day event. Rain ponchos provided at each Bale.</div></div>
+   <div class="info-row"><div class="info-label">UV</div><div class="info-detail">June sun is strong. Sunscreen is essential for outdoor activities. SPF 30 is provided at each Bale.</div></div>
+   <div class="info-row"><div class="info-label">Mount Batur summit</div><div class="info-detail">At 1,717 meters, the summit is significantly cooler — bring a warm layer for the 2:00am departure. Temperatures can drop to 12–15°C (54–59°F) at night and early morning.</div></div>
+   <div class="info-row"><div class="info-label">Bottom line</div><div class="info-detail">June is an ideal time to visit Bali — warm, sunny, drier, and with manageable humidity. The timing couldn't be better.</div></div>
   </div>
-
-  <div class="info-section" style="margin-top:2rem;">
-    <h3 class="info-heading">What to Expect in June</h3>
-    <div class="info-rows">
-      <div class="info-row"><div class="info-label">Season</div><div class="info-detail">June is solidly in Bali's dry season — one of the best months to visit. The wet season runs November to March, so you're well into comfortable conditions.</div></div>
-      <div class="info-row"><div class="info-label">Sunshine</div><div class="info-detail">Approximately 9 hours of bright sunshine per day. Mornings tend to be clearest; afternoons can bring some cloud buildup.</div></div>
-      <div class="info-row"><div class="info-label">Rainfall</div><div class="info-detail">Only about 5–6 rainy days in June. When it rains, it's typically a brief tropical shower — not an all-day event. Rain ponchos provided at each Bale.</div></div>
-      <div class="info-row"><div class="info-label">UV</div><div class="info-detail">June sun is strong. Sunscreen is essential for outdoor activities. SPF 30 is provided at each Bale.</div></div>
-      <div class="info-row"><div class="info-label">Mount Batur summit</div><div class="info-detail">At 1,717 meters, the summit is significantly cooler — bring a warm layer for the 2:00am departure. Temperatures can drop to 12–15°C (54–59°F) at night and early morning.</div></div>
-      <div class="info-row"><div class="info-label">Bottom line</div><div class="info-detail">June is an ideal time to visit Bali — warm, sunny, drier, and with manageable humidity. The timing couldn't be better.</div></div>
-    </div>
-  </div>
+ </div>
 </section>
 
 <!-- ═══ LINKS ═══ -->
 <section class="tab-panel" id="tab-links">
-  <div class="section-intro">
-    <h2 class="section-title">Links, Contact & Other</h2>
-    <p class="section-desc">All websites, contacts, power adapters, and resources in one place</p>
-  </div>
+ <div class="section-intro">
+  <h2 class="section-title">Links, Contact & Other</h2>
+  <p class="section-desc">All websites, contacts, power adapters, and resources in one place</p>
+ </div>
 
-  <div class="links-grid">
-    <a href="https://molina.imigrasi.go.id" target="_blank" class="link-card"><div class="link-title">Bali e-VOA</div><div class="link-url">molina.imigrasi.go.id</div><div class="link-desc">Apply for your Indonesian visa before departure</div></a>
-    <a href="https://escape.banyantree.com" target="_blank" class="link-card"><div class="link-title">Buahan Resort</div><div class="link-url">escape.banyantree.com</div><div class="link-desc">Buahan, a Banyan Tree Escape — home base</div></a>
-    <a href="https://escapebanyantree.duve.co/g/5l5cwIlM9?id=home&isCompany=1&nflp=1" target="_blank" class="link-card"><div class="link-title">Buahan Guest Portal</div><div class="link-url">escapebanyantree.duve.co</div><div class="link-desc">Complimentary activities and discovery experiences</div></a>
-    <a href="https://locavorenxt.com" target="_blank" class="link-card"><div class="link-title">Locavore NXT</div><div class="link-url">locavorenxt.com</div><div class="link-desc">June 3 dinner — already booked</div></a>
-    <a href="https://www.instagram.com/thebluedoorbali/" target="_blank" class="link-card"><div class="link-title">The Blue Door Bali</div><div class="link-url">@thebluedoorbali</div><div class="link-desc">After-dinner dancing in Ubud</div></a>
-    <a href="https://balidriverandtour.com/balinese-full-moon-celebration/" target="_blank" class="link-card"><div class="link-title">What is Purnama?</div><div class="link-url">balidriverandtour.com</div><div class="link-desc">Understanding the Balinese full moon celebration</div></a>
-    <a href="https://www.theyogabarn.com" target="_blank" class="link-card"><div class="link-title">The Yoga Barn</div><div class="link-url">theyogabarn.com</div><div class="link-desc">Ubud's beloved wellness center</div></a>
-    <a href="https://grab.com" target="_blank" class="link-card"><div class="link-title">Grab</div><div class="link-url">grab.com</div><div class="link-desc">Southeast Asia rideshare — set up before you go</div></a>
-    <a href="https://airalo.com" target="_blank" class="link-card"><div class="link-title">Airalo eSIM</div><div class="link-url">airalo.com</div><div class="link-desc">International data — keep your US number</div></a>
-    <a href="https://www.ubudcenter.com/ubud-things-to-do/" target="_blank" class="link-card"><div class="link-title">Ubud Center</div><div class="link-url">ubudcenter.com</div><div class="link-desc">Events and dance performances in Ubud</div></a>
-    <a href="https://www.airport.kr/ap_en/1416/subview.do" target="_blank" class="link-card"><div class="link-title">Incheon Airport Guide</div><div class="link-url">airport.kr</div><div class="link-desc">ICN layover info — one of the world's best airports</div></a>
-    <a href="https://wwwnc.cdc.gov/travel/destinations/traveler/none/indonesia" target="_blank" class="link-card"><div class="link-title">CDC Indonesia Travel</div><div class="link-url">wwwnc.cdc.gov</div><div class="link-desc">Official vaccine and health recommendations for Indonesia</div></a>
-    <a href="https://kohllsrx.com/vaccines/travel" target="_blank" class="link-card"><div class="link-title">Travel Vaccines — Kohl's</div><div class="link-url">kohllsrx.com</div><div class="link-desc">Local travel vaccine pharmacy</div></a>
-  </div>
+ <div class="links-grid">
+  <a href="https://molina.imigrasi.go.id" target="_blank" class="link-card"><div class="link-title">Bali e-VOA</div><div class="link-url">molina.imigrasi.go.id</div><div class="link-desc">Apply for your Indonesian visa before departure</div></a>
+  <a href="https://escape.banyantree.com" target="_blank" class="link-card"><div class="link-title">Buahan Resort</div><div class="link-url">escape.banyantree.com</div><div class="link-desc">Buahan, a Banyan Tree Escape — home base</div></a>
+  <a href="https://escapebanyantree.duve.co/g/5l5cwIlM9?id=home&isCompany=1&nflp=1" target="_blank" class="link-card"><div class="link-title">Buahan Guest Portal</div><div class="link-url">escapebanyantree.duve.co</div><div class="link-desc">Complimentary activities and discovery experiences</div></a>
+  <a href="https://locavorenxt.com" target="_blank" class="link-card"><div class="link-title">Locavore NXT</div><div class="link-url">locavorenxt.com</div><div class="link-desc">June 3 dinner — already booked</div></a>
+  <a href="https://www.instagram.com/thebluedoorbali/" target="_blank" class="link-card"><div class="link-title">The Blue Door Bali</div><div class="link-url">@thebluedoorbali</div><div class="link-desc">After-dinner dancing in Ubud</div></a>
+  <a href="https://balidriverandtour.com/balinese-full-moon-celebration/" target="_blank" class="link-card"><div class="link-title">What is Purnama?</div><div class="link-url">balidriverandtour.com</div><div class="link-desc">Understanding the Balinese full moon celebration</div></a>
+  <a href="https://www.theyogabarn.com" target="_blank" class="link-card"><div class="link-title">The Yoga Barn</div><div class="link-url">theyogabarn.com</div><div class="link-desc">Ubud's beloved wellness center</div></a>
+  <a href="https://grab.com" target="_blank" class="link-card"><div class="link-title">Grab</div><div class="link-url">grab.com</div><div class="link-desc">Southeast Asia rideshare — set up before you go</div></a>
+  <a href="https://airalo.com" target="_blank" class="link-card"><div class="link-title">Airalo eSIM</div><div class="link-url">airalo.com</div><div class="link-desc">International data — keep your US number</div></a>
+  <a href="https://www.ubudcenter.com/ubud-things-to-do/" target="_blank" class="link-card"><div class="link-title">Ubud Center</div><div class="link-url">ubudcenter.com</div><div class="link-desc">Events and dance performances in Ubud</div></a>
+  <a href="https://www.airport.kr/ap_en/1416/subview.do" target="_blank" class="link-card"><div class="link-title">Incheon Airport Guide</div><div class="link-url">airport.kr</div><div class="link-desc">ICN layover info — one of the world's best airports</div></a>
+  <a href="https://wwwnc.cdc.gov/travel/destinations/traveler/none/indonesia" target="_blank" class="link-card"><div class="link-title">CDC Indonesia Travel</div><div class="link-url">wwwnc.cdc.gov</div><div class="link-desc">Official vaccine and health recommendations for Indonesia</div></a>
+  <a href="https://kohllsrx.com/vaccines/travel" target="_blank" class="link-card"><div class="link-title">Travel Vaccines — Kohl's</div><div class="link-url">kohllsrx.com</div><div class="link-desc">Local travel vaccine pharmacy</div></a>
+ </div>
 
-  <div class="info-section" style="margin-top:1.5rem;">
-    <h3 class="info-heading">Contact</h3>
-    <div class="info-rows">
-      <div class="info-row"><div class="info-label">Dian Purnama</div><div class="info-detail">Buahan concierge · <a href="mailto:Dian.Purnama@banyantree.com">Dian.Purnama@banyantree.com</a> · WhatsApp: +6281 936 574 246</div></div>
-    </div>
+ <div class="info-section" style="margin-top:1.5rem;">
+  <h3 class="info-heading">Contact</h3>
+  <div class="info-rows">
+   <div class="info-row"><div class="info-label">Dian Purnama</div><div class="info-detail">Buahan concierge · <a href="mailto:Dian.Purnama@banyantree.com">Dian.Purnama@banyantree.com</a> · WhatsApp: +6281 936 574 246</div></div>
   </div>
+ </div>
 
-  <div class="info-section">
-    <h3 class="info-heading">Power Adapters — Bali & Singapore</h3>
-    <div class="table-wrap"><table class="data-table"><thead><tr><th></th><th>Bali (Indonesia)</th><th>Singapore</th></tr></thead><tbody>
-      <tr><td><strong>Plug type</strong></td><td>Type C and F — two round pins</td><td>Type G — three rectangular pins (different from Bali)</td></tr>
-      <tr><td><strong>Voltage</strong></td><td>220–240V / 50Hz</td><td>230V / 50Hz</td></tr>
-      <tr><td><strong>US adapter needed?</strong></td><td>Yes — Type C or F</td><td>Yes — Type G</td></tr>
-      <tr><td><strong>Voltage converter?</strong></td><td>Usually no — check for '100–240V' on device</td><td>Usually no — same rule applies</td></tr>
-    </tbody></table></div>
-    <div class="info-rows" style="margin-top:0.75rem;">
-      <div class="info-row"><div class="info-label">Most devices are fine</div><div class="info-detail">Check your charger brick for '100–240V.' If it says this, you only need a plug adapter — covers almost all phones, laptops, cameras, and tablets.</div></div>
-      <div class="info-row"><div class="info-label">Hair tools — caution</div><div class="info-detail">Single-voltage hair dryers or straighteners rated '120V only' will be damaged. Use the hair dryer provided in each Bale.</div></div>
-      <div class="info-row"><div class="info-label">Buy a universal adapter</div><div class="info-detail">Bali and Singapore use different plug types. A universal travel adapter covers both — buy one before you leave.</div></div>
-    </div>
+ <div class="info-section">
+  <h3 class="info-heading">Power Adapters — Bali & Singapore</h3>
+  <div class="table-wrap"><table class="data-table"><thead><tr><th></th><th>Bali (Indonesia)</th><th>Singapore</th></tr></thead><tbody>
+   <tr><td><strong>Plug type</strong></td><td>Type C and F — two round pins</td><td>Type G — three rectangular pins (different from Bali)</td></tr>
+   <tr><td><strong>Voltage</strong></td><td>220–240V / 50Hz</td><td>230V / 50Hz</td></tr>
+   <tr><td><strong>US adapter needed?</strong></td><td>Yes — Type C or F</td><td>Yes — Type G</td></tr>
+   <tr><td><strong>Voltage converter?</strong></td><td>Usually no — check for '100–240V' on device</td><td>Usually no — same rule applies</td></tr>
+  </tbody></table></div>
+  <div class="info-rows" style="margin-top:0.75rem;">
+   <div class="info-row"><div class="info-label">Most devices are fine</div><div class="info-detail">Check your charger brick for '100–240V.' If it says this, you only need a plug adapter — covers almost all phones, laptops, cameras, and tablets.</div></div>
+   <div class="info-row"><div class="info-label">Hair tools — caution</div><div class="info-detail">Single-voltage hair dryers or straighteners rated '120V only' will be damaged. Use the hair dryer provided in each Bale.</div></div>
+   <div class="info-row"><div class="info-label">Buy a universal adapter</div><div class="info-detail">Bali and Singapore use different plug types. A universal travel adapter covers both — buy one before you leave.</div></div>
   </div>
+ </div>
 </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="footer-inner">
-    <p id="footerVersion">Robin's 60th · Bali 2026</p>
-  </div>
+ <div class="footer-inner">
+  <p id="footerVersion">Robin's 60th · Bali 2026</p>
+ </div>
 </footer>
 
 <script src="app.js"></script>
