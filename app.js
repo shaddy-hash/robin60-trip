@@ -1,5 +1,39 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  // ── DYNAMIC IDR/USD EXCHANGE RATE ────────────────────
+  // Fetches live rate and recalculates USD column on pricing tab
+  (function fetchExchangeRate() {
+    fetch('https://open.er-api.com/v6/latest/IDR')
+      .then(r => r.json())
+      .then(data => {
+        const usdPerIdr = data.rates && data.rates.USD;
+        if (!usdPerIdr) return;
+        const idrPerUsd = Math.round(1 / usdPerIdr);
+        // Update note
+        const note = document.getElementById('usd-rate-note');
+        if (note) note.textContent = 'Live rate: ~' + idrPerUsd.toLocaleString() + ' IDR per $1 USD';
+        // Recalculate each USD cell
+        document.querySelectorAll('.usd-col').forEach(cell => {
+          const row = cell.closest('tr');
+          if (!row) return;
+          const idrCell = row.querySelector('td:nth-child(2)');
+          if (!idrCell) return;
+          const idrText = idrCell.textContent;
+          // Extract all numeric values
+          const nums = idrText.match(/[\d,]+/g);
+          if (!nums) return;
+          const vals = nums.map(n => parseInt(n.replace(/,/g, ''))).filter(n => n > 1000);
+          if (!vals.length) return;
+          const usdVals = vals.map(v => Math.round(v * usdPerIdr));
+          const unique = [...new Set(usdVals)];
+          cell.textContent = unique.length === 1
+            ? '~$' + unique[0]
+            : '~$' + Math.min(...unique) + '–$' + Math.max(...unique);
+        });
+      })
+      .catch(() => {}); // Silently fail — static estimates remain
+  })();
+
   // ── TIMESTAMP ─────────────────────────────────────────
   function setTimestamp() {
     try {
@@ -20,6 +54,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
   setTimestamp();
+
+  // ── LIVE CLOCKS ───────────────────────────────────────
+  function updateClocks() {
+    const now = new Date();
+    const omahaOpts = { timeZone: 'America/Chicago', hour: 'numeric', minute: '2-digit', hour12: true };
+    const baliOpts  = { timeZone: 'Asia/Makassar',   hour: 'numeric', minute: '2-digit', hour12: true };
+    const omaha = document.getElementById('clockOmaha');
+    const bali  = document.getElementById('clockBali');
+    if (omaha) omaha.textContent = now.toLocaleTimeString('en-US', omahaOpts);
+    if (bali)  bali.textContent  = now.toLocaleTimeString('en-US', baliOpts);
+  }
+  updateClocks();
+  setInterval(updateClocks, 1000); // Update every second
 
   // ── TAB NAVIGATION ────────────────────────────────────
   const tabBtns = document.querySelectorAll('.tab-btn');
@@ -44,6 +91,25 @@ document.addEventListener('DOMContentLoaded', function () {
   const hash = window.location.hash.replace('#', '');
   if (hash && document.getElementById('tab-' + hash)) {
     activateTab(hash);
+  }
+
+  // ── NAV SCROLL UX ─────────────────────────────────────
+  const navInner = document.getElementById('tabNavInner');
+  const navWrap  = document.getElementById('tabNavWrap');
+
+  function updateNavScrollState() {
+    if (!navInner || !navWrap) return;
+    const sl = navInner.scrollLeft;
+    const maxScroll = navInner.scrollWidth - navInner.clientWidth;
+    navWrap.classList.toggle('can-scroll-left',  sl > 4);
+    navWrap.classList.toggle('can-scroll-right', sl < maxScroll - 4);
+  }
+
+  if (navInner) {
+    navInner.addEventListener('scroll', updateNavScrollState, { passive: true });
+    // Run once on load and after fonts render
+    updateNavScrollState();
+    setTimeout(updateNavScrollState, 300);
   }
 
   // ── SPEECH SYNTHESIS ──────────────────────────────────
@@ -133,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
       '&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum',
       '&timezone=Asia%2FMakassar',
       '&forecast_days=7',
-      '&wind_speed_unit=mph'
+      '&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch'
     ].join('');
 
     fetch(url)
@@ -147,12 +213,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const [desc, icon] = wmo(c.weather_code);
 
         document.getElementById('wc-temp').textContent =
-          Math.round(c.temperature_2m) + '°C / ' + toF(c.temperature_2m) + '°F';
+          Math.round(c.temperature_2m) + '°F';
         document.getElementById('wc-desc').textContent = icon + ' ' + desc;
         document.getElementById('wc-humidity').textContent = c.relative_humidity_2m + '%';
         document.getElementById('wc-wind').textContent = Math.round(c.wind_speed_10m) + ' mph';
         document.getElementById('wc-feels').textContent =
-          Math.round(c.apparent_temperature) + '°C / ' + toF(c.apparent_temperature) + '°F';
+          Math.round(c.apparent_temperature) + '°F';
 
         const fc = document.getElementById('weather-forecast');
         fc.innerHTML = '';
@@ -164,9 +230,9 @@ document.addEventListener('DOMContentLoaded', function () {
           el.innerHTML =
             '<div class="wf-date">' + dayLabel(t, i) + '<br>' + monthDay(t) + '</div>' +
             '<div class="wf-icon">' + fi + '</div>' +
-            '<div class="wf-hi">' + Math.round(d.temperature_2m_max[i]) + '°C</div>' +
-            '<div class="wf-lo">' + Math.round(d.temperature_2m_min[i]) + '°C</div>' +
-            '<div class="wf-rain">' + (rain > 0 ? '💧 ' + rain.toFixed(1) + 'mm' : '—') + '</div>';
+            '<div class="wf-hi">' + Math.round(d.temperature_2m_max[i]) + '°F</div>' +
+            '<div class="wf-lo">' + Math.round(d.temperature_2m_min[i]) + '°F</div>' +
+            '<div class="wf-rain">' + (rain > 0 ? '💧 ' + rain.toFixed(2) + '"' : '—') + '</div>';
           fc.appendChild(el);
         });
 
