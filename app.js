@@ -25,14 +25,13 @@ document.addEventListener('DOMContentLoaded', function () {
           hikeCell.textContent = '~$' + Math.round(3700000 * usdPerIdr) + ' / $' + Math.round(2700000 * usdPerIdr);
         }
 
-        // Recalculate wine USD cells
+        // Recalculate wine USD cells — IDR values are in thousands so multiply by 1000
         document.querySelectorAll('.wine-usd[data-idr]').forEach(cell => {
           const raw = cell.dataset.idr;
           const nums = raw.match(/[\d,]+/g);
           if (!nums) return;
-          const vals = nums.map(n => parseInt(n.replace(/,/g, ''))).filter(n => n > 100);
+          const vals = nums.map(n => parseInt(n.replace(/,/g, '')) * 1000).filter(n => n > 0);
           if (!vals.length) return;
-          // Check if glass/bottle split
           if (raw.includes('/') && vals.length >= 2) {
             cell.textContent = '$' + Math.round(vals[0] * usdPerIdr) + '/gl · $' + Math.round(vals[1] * usdPerIdr) + '/btl';
           } else {
