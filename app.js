@@ -36,12 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .catch(() => {}); // Silently fail — static estimates remain
   })();
 
-  // ── TIMESTAMP — static, set at build time ────────────
-  const LAST_UPDATED = 'May 17, 2026 at 3:25 PM CT';
-  const tag = document.getElementById('versionTag');
-  const footer = document.getElementById('footerVersion');
-  if (tag) tag.textContent = 'Last updated: ' + LAST_UPDATED;
-  if (footer) footer.textContent = "Robin's 60th · Bali 2026 · Last updated: " + LAST_UPDATED;
+  // Timestamp is static HTML — no JS needed
 
   // ── LIVE CLOCKS ───────────────────────────────────────
   function updateClocks() {
