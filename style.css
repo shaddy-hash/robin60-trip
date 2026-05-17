@@ -853,3 +853,11 @@ img { max-width: 100%; }
 #tab-pricing .data-table th:nth-child(3) { width: 9%;  }
 #tab-pricing .data-table th:nth-child(4) { width: 20%; }
 #tab-pricing .data-table th:nth-child(5) { width: 29%; }
+
+/* ─── WINE TABLE USD COLUMN ─── */
+.wine-usd {
+  font-weight: 600;
+  color: var(--teal);
+  white-space: nowrap;
+  font-size: 0.78rem;
+}

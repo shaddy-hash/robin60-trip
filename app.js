@@ -12,26 +12,33 @@ document.addEventListener('DOMContentLoaded', function () {
         // Update note
         const note = document.getElementById('usd-rate-note');
         if (note) note.textContent = 'Live rate: ~' + idrPerUsd.toLocaleString() + ' IDR per $1 USD';
-        // Recalculate each USD cell using data-idr attribute
+        // Recalculate pricing tab USD cells
         document.querySelectorAll('.usd-col[data-idr]').forEach(cell => {
+          if (cell.classList.contains('wine-usd')) return; // handled separately
           const idrVal = parseInt(cell.dataset.idr);
           if (!idrVal) return;
-          const usd = Math.round(idrVal * usdPerIdr);
-          // For hike, show both couple/single
-          if (cell.textContent.includes('/')) {
-            const idr2 = Math.round(idrVal * 0.73); // approx single rate
-            cell.textContent = '~$' + usd + ' / $' + Math.round(2700000 * usdPerIdr);
-          } else {
-            cell.textContent = '~$' + usd;
-          }
+          cell.textContent = '~$' + Math.round(idrVal * usdPerIdr);
         });
         // Special case: hike has two rates
         const hikeCell = document.querySelector('.usd-col[data-idr="3700000"]');
         if (hikeCell) {
-          const couple = Math.round(3700000 * usdPerIdr);
-          const single = Math.round(2700000 * usdPerIdr);
-          hikeCell.textContent = '~$' + couple + ' / $' + single;
+          hikeCell.textContent = '~$' + Math.round(3700000 * usdPerIdr) + ' / $' + Math.round(2700000 * usdPerIdr);
         }
+
+        // Recalculate wine USD cells
+        document.querySelectorAll('.wine-usd[data-idr]').forEach(cell => {
+          const raw = cell.dataset.idr;
+          const nums = raw.match(/[\d,]+/g);
+          if (!nums) return;
+          const vals = nums.map(n => parseInt(n.replace(/,/g, ''))).filter(n => n > 100);
+          if (!vals.length) return;
+          // Check if glass/bottle split
+          if (raw.includes('/') && vals.length >= 2) {
+            cell.textContent = '$' + Math.round(vals[0] * usdPerIdr) + '/gl · $' + Math.round(vals[1] * usdPerIdr) + '/btl';
+          } else {
+            cell.textContent = '~$' + Math.round(vals[0] * usdPerIdr);
+          }
+        });
       })
       .catch(() => {}); // Silently fail — static estimates remain
   })();
