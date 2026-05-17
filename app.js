@@ -25,17 +25,25 @@ document.addEventListener('DOMContentLoaded', function () {
           hikeCell.textContent = '~$' + Math.round(3700000 * usdPerIdr) + ' / $' + Math.round(2700000 * usdPerIdr);
         }
 
-        // Recalculate wine USD cells — IDR values are in thousands so multiply by 1000
+        // Recalculate wine USD cells
+        // data-idr is the display value e.g. "15,250" meaning 15,250,000 IDR
+        // So strip commas, parse as integer, multiply by 1000, then convert
         document.querySelectorAll('.wine-usd[data-idr]').forEach(cell => {
           const raw = cell.dataset.idr;
-          const nums = raw.match(/[\d,]+/g);
-          if (!nums) return;
-          const vals = nums.map(n => parseInt(n.replace(/,/g, '')) * 1000).filter(n => n > 0);
-          if (!vals.length) return;
-          if (raw.includes('/') && vals.length >= 2) {
-            cell.textContent = '$' + Math.round(vals[0] * usdPerIdr) + '/gl · $' + Math.round(vals[1] * usdPerIdr) + '/btl';
+          // Glass/bottle split e.g. "350/glass · 1,450/btl"
+          if (raw.includes('/glass')) {
+            const parts = raw.split('·');
+            const glNum  = parseInt(parts[0].replace(/[^0-9]/g, '')) * 1000;
+            const btlNum = parseInt(parts[1].replace(/[^0-9]/g, '')) * 1000;
+            if (glNum && btlNum) {
+              cell.textContent = '$' + Math.round(glNum * usdPerIdr) + '/gl · $' + Math.round(btlNum * usdPerIdr) + '/btl';
+            }
           } else {
-            cell.textContent = '~$' + Math.round(vals[0] * usdPerIdr);
+            // Standard value e.g. "15,250"
+            const num = parseInt(raw.replace(/,/g, '')) * 1000;
+            if (num > 0) {
+              cell.textContent = '~$' + Math.round(num * usdPerIdr);
+            }
           }
         });
       })
