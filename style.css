@@ -861,3 +861,20 @@ img { max-width: 100%; }
   white-space: nowrap;
   font-size: 0.78rem;
 }
+
+/* ─── SELF CARE PILL ─── */
+.pill-selfcare { background: #E8F4F0; color: #2A7A6A; }
+
+/* ─── HIKE SUB-BLOCKS (June 3 nesting) ─── */
+.hike-group {
+  border-left: 3px solid var(--teal);
+  margin-left: 8px;
+  background: #F7FDFB;
+}
+.hike-group .sched-block {
+  padding-left: 1.5rem;
+}
+.hike-group .travel-block {
+  padding-left: 1.8rem;
+  background: #EEF8F5;
+}
